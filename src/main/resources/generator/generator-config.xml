@@ -40,8 +40,8 @@
                              targetPackage="com.example.springbootdemothree.mapper"
                              type="XMLMAPPER"/>
 
-        <table tableName="demo"/>
-        <!--<table tableName="ebook"/>-->
+<!--        <table tableName="demo"/>-->
+        <table tableName="ebook"/>
         <!--<table tableName="category"/>-->
         <!--<table tableName="doc"/>-->
         <!--<table tableName="content"/>-->
