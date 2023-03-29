@@ -3368,3 +3368,232 @@ Caused by: java.lang.ClassCastException: class ch.qos.logback.classic.Logger can
 2023-03-29 20:22:34.625 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-03-29 20:22:34.625 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
 2023-03-29 20:22:34.625 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:25:32.802 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-03-29 20:25:32.808 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:32.808 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-29 20:25:32.810 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:32.810 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:32.857 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 452 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-29 20:25:32.858 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:25:32.988 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-29 20:25:32.989 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:32.989 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-29 20:25:32.989 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 20:25:32.994 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-29 20:25:32.994 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 135 ms
+2023-03-29 20:25:33.095 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-29 20:25:33.096 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-29 20:25:33.103 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:33.106 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-29 20:25:33.110 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.266 seconds (process running for 340.669)
+2023-03-29 20:25:33.111 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-29 20:25:33.112 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-29 20:25:33.112 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:25:41.679 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-03-29 20:25:41.684 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:41.684 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-29 20:25:41.685 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:41.686 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:41.740 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 452 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-29 20:25:41.740 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:25:41.866 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-29 20:25:41.866 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:41.866 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-29 20:25:41.866 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 20:25:41.872 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-29 20:25:41.872 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 130 ms
+2023-03-29 20:25:41.976 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-29 20:25:41.977 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-29 20:25:41.985 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:41.987 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-29 20:25:41.992 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.263 seconds (process running for 349.551)
+2023-03-29 20:25:41.993 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-29 20:25:41.994 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-29 20:25:41.994 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:25:43.410 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-03-29 20:25:43.417 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:43.417 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-29 20:25:43.418 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:43.420 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:43.473 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 452 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-29 20:25:43.474 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:25:43.592 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-29 20:25:43.593 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:43.593 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-29 20:25:43.593 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 20:25:43.599 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-29 20:25:43.599 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 124 ms
+2023-03-29 20:25:43.701 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-29 20:25:43.702 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-29 20:25:43.708 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:43.712 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-29 20:25:43.716 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.253 seconds (process running for 351.276)
+2023-03-29 20:25:43.717 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-29 20:25:43.718 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-29 20:25:43.718 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:25:51.650 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-29 20:25:51.655 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:51.655 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-29 20:25:51.656 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:51.657 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:51.685 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 452 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-29 20:25:51.687 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:25:51.811 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-29 20:25:51.811 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:51.811 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-29 20:25:51.811 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 20:25:51.817 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-29 20:25:51.817 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 129 ms
+2023-03-29 20:25:51.914 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-29 20:25:51.915 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-29 20:25:51.923 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:25:51.924 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-29 20:25:51.928 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.253 seconds (process running for 359.487)
+2023-03-29 20:25:51.929 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-29 20:25:51.930 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-29 20:25:51.930 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:26:44.330 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-03-29 20:26:44.337 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:44.337 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-29 20:26:44.338 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:44.338 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:44.380 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 452 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-29 20:26:44.380 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:26:44.505 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-29 20:26:44.505 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:44.505 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-29 20:26:44.505 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 20:26:44.511 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-29 20:26:44.511 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 130 ms
+2023-03-29 20:26:44.601 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-29 20:26:44.602 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-29 20:26:44.609 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:44.612 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-29 20:26:44.616 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.247 seconds (process running for 412.175)
+2023-03-29 20:26:44.617 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-29 20:26:44.617 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-29 20:26:44.617 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:26:46.027 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-03-29 20:26:46.033 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:46.033 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-29 20:26:46.034 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:46.034 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:46.078 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 452 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-29 20:26:46.078 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:26:46.193 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-29 20:26:46.193 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:46.193 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-29 20:26:46.193 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 20:26:46.199 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-29 20:26:46.199 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 120 ms
+2023-03-29 20:26:46.288 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-29 20:26:46.289 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-29 20:26:46.297 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:26:46.299 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-29 20:26:46.303 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.234 seconds (process running for 413.862)
+2023-03-29 20:26:46.304 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-29 20:26:46.304 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-29 20:26:46.304 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:27:27.034 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 20:27:27.034 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-03-29 20:27:27.036 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-03-29 20:27:27.036 INFO  com.example.springbootdemothree.filter.LogFilter  :23   [32m                  [0;39m ----------LogFilter  开始-----------
+2023-03-29 20:27:27.036 INFO  com.example.springbootdemothree.filter.LogFilter  :24   [32m                  [0;39m 请求地址：http://127.0.0.1:8081/ebook/list GET
+2023-03-29 20:27:27.037 INFO  com.example.springbootdemothree.filter.LogFilter  :25   [32m                  [0;39m 远程地址：127.0.0.1 
+2023-03-29 20:27:27.041 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2023-03-29 20:27:27.046 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@789d19bd
+2023-03-29 20:27:27.047 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2023-03-29 20:27:27.055 INFO  com.example.springbootdemothree.filter.LogFilter  :29   [32m                  [0;39m ----------LogFilter结束耗时：18 ms-----------
+2023-03-29 20:27:50.055 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2023-03-29 20:27:50.057 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2023-03-29 20:27:51.533 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 4416 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-29 20:27:51.534 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:27:51.558 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-29 20:27:51.558 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-29 20:27:52.197 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-29 20:27:52.202 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:27:52.203 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-29 20:27:52.203 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 20:27:52.230 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-29 20:27:52.230 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 671 ms
+2023-03-29 20:27:52.662 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-29 20:27:52.665 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-29 20:27:52.692 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:27:52.703 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-29 20:27:52.710 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.416 seconds (process running for 1.932)
+2023-03-29 20:27:52.714 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-29 20:27:52.714 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:27:53.280 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 20:27:53.280 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-03-29 20:27:53.281 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-03-29 20:27:53.281 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-03-29 20:27:53.360 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70b53834
+2023-03-29 20:27:53.366 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-03-29 20:27:59.027 INFO  com.example.springbootdemothree.filter.LogFilter  :23   [32m                  [0;39m ----------LogFilter  开始-----------
+2023-03-29 20:27:59.028 INFO  com.example.springbootdemothree.filter.LogFilter  :24   [32m                  [0;39m 请求地址：http://127.0.0.1:8081/ebook/list GET
+2023-03-29 20:27:59.028 INFO  com.example.springbootdemothree.filter.LogFilter  :25   [32m                  [0;39m 远程地址：127.0.0.1 
+2023-03-29 20:27:59.105 INFO  com.example.springbootdemothree.filter.LogFilter  :29   [32m                  [0;39m ----------LogFilter结束耗时：77 ms-----------
+2023-03-29 20:29:33.441 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-03-29 20:29:33.445 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-03-29 20:29:36.350 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 8768 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-29 20:29:36.352 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:29:36.377 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-29 20:29:36.377 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-29 20:29:37.010 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-29 20:29:37.015 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:29:37.016 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-29 20:29:37.016 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 20:29:37.042 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-29 20:29:37.043 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 665 ms
+2023-03-29 20:29:37.474 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-29 20:29:37.477 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-29 20:29:37.503 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:29:37.514 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-29 20:29:37.522 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.409 seconds (process running for 1.898)
+2023-03-29 20:29:37.525 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-29 20:29:37.525 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:29:37.686 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 20:29:37.686 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-03-29 20:29:37.687 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-03-29 20:29:37.691 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-03-29 20:29:37.769 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48310b7b
+2023-03-29 20:29:37.772 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-03-29 20:29:45.186 INFO  com.example.springbootdemothree.filter.LogFilter  :23   [32m                  [0;39m ----------LogFilter  开始-----------
+2023-03-29 20:29:45.186 INFO  com.example.springbootdemothree.filter.LogFilter  :24   [32m                  [0;39m 请求地址：http://127.0.0.1:8081/ebook/list GET
+2023-03-29 20:29:45.187 INFO  com.example.springbootdemothree.filter.LogFilter  :25   [32m                  [0;39m 远程地址：127.0.0.1 
+2023-03-29 20:29:45.260 INFO  com.example.springbootdemothree.filter.LogFilter  :29   [32m                  [0;39m ----------LogFilter结束耗时：73 ms-----------
+2023-03-29 20:30:38.125 INFO  com.example.springbootdemothree.filter.LogFilter  :23   [32m                  [0;39m ----------LogFilter  开始-----------
+2023-03-29 20:30:38.125 INFO  com.example.springbootdemothree.filter.LogFilter  :24   [32m                  [0;39m 请求地址：http://localhost:8081/ebook/list GET
+2023-03-29 20:30:38.125 INFO  com.example.springbootdemothree.filter.LogFilter  :25   [32m                  [0;39m 远程地址：127.0.0.1 
+2023-03-29 20:30:38.130 INFO  com.example.springbootdemothree.filter.LogFilter  :29   [32m                  [0;39m ----------LogFilter结束耗时：5 ms-----------
+2023-03-29 20:31:17.270 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-03-29 20:31:17.275 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-03-29 20:31:18.914 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 17656 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-29 20:31:18.915 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:31:18.941 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-29 20:31:18.941 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-29 20:31:19.588 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-29 20:31:19.594 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:31:19.594 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-29 20:31:19.594 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-29 20:31:19.621 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-29 20:31:19.622 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 681 ms
+2023-03-29 20:31:20.068 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-29 20:31:20.072 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-29 20:31:20.098 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:31:20.110 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-29 20:31:20.118 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.44 seconds (process running for 1.935)
+2023-03-29 20:31:20.121 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-29 20:31:20.122 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-29 20:31:20.669 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 20:31:20.669 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-03-29 20:31:20.670 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-03-29 20:31:20.670 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-03-29 20:31:20.749 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34eef4ff
+2023-03-29 20:31:20.760 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-03-29 20:31:32.336 INFO  com.example.springbootdemothree.filter.LogFilter  :23   [32m                  [0;39m ----------LogFilter  开始-----------
+2023-03-29 20:31:32.336 INFO  com.example.springbootdemothree.filter.LogFilter  :24   [32m                  [0;39m 请求地址：http://localhost:8081/ebook/list GET
+2023-03-29 20:31:32.337 INFO  com.example.springbootdemothree.filter.LogFilter  :25   [32m                  [0;39m 远程地址：127.0.0.1 
+2023-03-29 20:31:32.402 INFO  com.example.springbootdemothree.filter.LogFilter  :29   [32m                  [0;39m ----------LogFilter结束耗时：65 ms-----------
+2023-03-29 20:33:03.822 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-03-29 20:33:03.826 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
