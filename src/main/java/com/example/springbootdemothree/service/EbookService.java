@@ -8,6 +8,7 @@ import com.example.springbootdemothree.resp.EbookResp;
 import com.example.springbootdemothree.util.CopyUtil;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import java.util.List;
 
@@ -19,7 +20,10 @@ public class EbookService {
     public List<EbookResp> list(EbookReq req) {
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
+        if (!ObjectUtils.isEmpty(req.getName())) {
+
         criteria.andNameLike("%" + req.getName() + "%");
+        }
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
 
         //  List<EbookResp> respList = new ArrayList<>();

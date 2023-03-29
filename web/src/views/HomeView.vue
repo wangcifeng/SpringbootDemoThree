@@ -48,34 +48,26 @@
           :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
         >
          
-
         <a-list item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks">
-    
-    <template #renderItem="{ item }">
-      <a-list-item key="item.name">
-        <template #actions>
-          <span v-for="{ type, text } in actions" :key="type">
-            <component v-bind:is="type" style="margin-right: 8px" />
-            {{ text }}
-          </span>
-        </template>
-        <a-list-item-meta :description="item.description">
-          <template #title>
-            <a :href="item.href">{{ item.name }}</a>
+          <template #renderItem="{ item }">
+            <a-list-item key="item.name">
+              <template #actions>
+                <span v-for="{ type, text } in actions" :key="type">
+                  <component v-bind:is="type" style="margin-right: 8px" />
+                  {{ text }}
+                </span>
+              </template>
+              <a-list-item-meta :description="item.description">
+                <template #title>
+                  <a :href="item.href">{{ item.name }}</a>
+                </template>
+                <template #avatar><a-avatar :src="item.cover" /></template>
+              </a-list-item-meta>
+            </a-list-item>
           </template>
-          <template #avatar><a-avatar :src="item.cover" /></template>
-        </a-list-item-meta>
-      </a-list-item>
-    </template>
-  </a-list>
+        </a-list>
 
-
-
-
-
-
-
-        </a-layout-content>
+      </a-layout-content>
     </a-layout>
   </div>
 </template>
@@ -105,7 +97,7 @@ export default defineComponent({
 
     onMounted ( () => {
       console.log("onMounted");
-      axios.get("http://localhost:8081/ebook/list?name=java").then((response) => {
+      axios.get("http://localhost:8081/ebook/list").then((response) => {
         const data = response.data;
         ebooks.value = data.content;
         console.log(response);
@@ -120,3 +112,12 @@ export default defineComponent({
   }
 });
 </script>
+<style scoped>
+.ant-avatar {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 8%;
+  margin: 5px 0;
+}
+</style>
