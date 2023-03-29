@@ -5,6 +5,9 @@ import store from './store'
 import Antd from 'ant-design-vue'
 import "ant-design-vue/dist/antd.css"
 import * as Icons from '@ant-design/icons-vue'
+import Axios from 'axios'
+
+Axios.defaults.baseURL = process.env.VUE_APP_SERVER
 
 
 const app = createApp(App);
