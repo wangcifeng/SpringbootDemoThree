@@ -96,11 +96,9 @@ export default defineComponent({
     const ebooks = ref();
 
     onMounted ( () => {
-      console.log("onMounted111");
       axios.get("/ebook/list").then((response) => {
         const data = response.data;
         ebooks.value = data.content;
-        console.log(response);
       });
     });
 
