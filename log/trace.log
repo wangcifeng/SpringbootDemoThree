@@ -368,3 +368,10 @@ Caused by: java.lang.ClassNotFoundException: com.alibaba.fastjson.serializer.Ser
 2023-03-30 14:08:39.372 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296526049284591616[0;39m 请求参数: [{"name":"java"}]
 2023-03-30 14:08:39.420 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296526049284591616[0;39m 返回结果: {"content":[{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"}],"success":true}
 2023-03-30 14:08:39.421 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296526049284591616[0;39m ------------- 结束 耗时：84 ms -------------
+2023-03-30 14:43:25.267 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296534798309134336[0;39m ------------- 开始 -------------
+2023-03-30 14:43:25.268 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296534798309134336[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 14:43:25.268 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296534798309134336[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 14:43:25.268 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296534798309134336[0;39m 远程地址: 127.0.0.1
+2023-03-30 14:43:25.268 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296534798309134336[0;39m 请求参数: [{}]
+2023-03-30 14:43:25.273 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296534798309134336[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 14:43:25.273 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296534798309134336[0;39m ------------- 结束 耗时：6 ms -------------
