@@ -2,10 +2,7 @@
   <div class="home">
     <a-layout>
       <a-layout-sider width="200" style="background: #fff">
-        <a-menu
-          mode="inline"
-          :style="{ height: '100%', borderRight: 0 }"
-        >
+        <a-menu mode="inline" :style="{ height: '100%', borderRight: 0 }">
           <a-sub-menu key="sub1">
             <template #title>
               <span>
@@ -44,10 +41,8 @@
           </a-sub-menu>
         </a-menu>
       </a-layout-sider>
-      <a-layout-content
-          :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
-        >
-         
+      <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
+
         <a-list item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks">
           <template #renderItem="{ item }">
             <a-list-item key="item.name">
@@ -73,12 +68,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent , onMounted , ref} from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import axios from 'axios';
 
 export default defineComponent({
   name: 'HomeView',
-  setup () {
+  setup() {
     const pagination = {
       onChange: (page: number) => {
         console.log(page);
@@ -95,7 +90,7 @@ export default defineComponent({
 
     const ebooks = ref();
 
-    onMounted ( () => {
+    onMounted(() => {
       axios.get("/ebook/list").then((response) => {
         const data = response.data;
         ebooks.value = data.content;
