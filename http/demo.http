@@ -2,4 +2,4 @@ GET http://localhost:8081/demo/list
 
 #####
 
-GET http://localhost:8081/ebook/list?name=java
+GET http://localhost:8081/ebook/list

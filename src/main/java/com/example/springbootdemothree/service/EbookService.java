@@ -6,18 +6,27 @@ import com.example.springbootdemothree.mapper.EbookMapper;
 import com.example.springbootdemothree.req.EbookReq;
 import com.example.springbootdemothree.resp.EbookResp;
 import com.example.springbootdemothree.util.CopyUtil;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import jakarta.annotation.Resource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import java.util.List;
 
+
 @Service
 public class EbookService {
+
+    private static final Logger LOG = LoggerFactory.getLogger(EbookService.class);
+
     @Resource
     private EbookMapper ebookMapper;
 
     public List<EbookResp> list(EbookReq req) {
+        PageHelper.startPage(1, 3);
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
@@ -25,6 +34,10 @@ public class EbookService {
         criteria.andNameLike("%" + req.getName() + "%");
         }
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
+
+        PageInfo pageInfo = new PageInfo<>(ebookList);
+        LOG.info("总行数：{}", pageInfo.getTotal());
+        LOG.info("总页数：{}", pageInfo.getPages());
 
         //  List<EbookResp> respList = new ArrayList<>();
         //  for (Ebook ebook : ebookList) {

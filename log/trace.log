@@ -375,3 +375,752 @@ Caused by: java.lang.ClassNotFoundException: com.alibaba.fastjson.serializer.Ser
 2023-03-30 14:43:25.268 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296534798309134336[0;39m 请求参数: [{}]
 2023-03-30 14:43:25.273 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296534798309134336[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
 2023-03-30 14:43:25.273 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296534798309134336[0;39m ------------- 结束 耗时：6 ms -------------
+2023-03-30 14:53:52.963 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296537431056977920[0;39m ------------- 开始 -------------
+2023-03-30 14:53:52.963 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296537431056977920[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 14:53:52.964 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296537431056977920[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 14:53:52.964 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296537431056977920[0;39m 远程地址: 127.0.0.1
+2023-03-30 14:53:52.964 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296537431056977920[0;39m 请求参数: [{}]
+2023-03-30 14:53:52.966 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296537431056977920[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 14:53:52.966 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296537431056977920[0;39m ------------- 结束 耗时：3 ms -------------
+2023-03-30 14:53:55.000 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296537439600775168[0;39m ------------- 开始 -------------
+2023-03-30 14:53:55.001 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296537439600775168[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 14:53:55.001 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296537439600775168[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 14:53:55.001 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296537439600775168[0;39m 远程地址: 127.0.0.1
+2023-03-30 14:53:55.001 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296537439600775168[0;39m 请求参数: [{}]
+2023-03-30 14:53:55.002 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296537439600775168[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 14:53:55.003 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296537439600775168[0;39m ------------- 结束 耗时：3 ms -------------
+2023-03-30 14:53:57.190 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296537448786300928[0;39m ------------- 开始 -------------
+2023-03-30 14:53:57.191 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296537448786300928[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 14:53:57.191 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296537448786300928[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 14:53:57.191 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296537448786300928[0;39m 远程地址: 127.0.0.1
+2023-03-30 14:53:57.191 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296537448786300928[0;39m 请求参数: [{}]
+2023-03-30 14:53:57.193 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296537448786300928[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 14:53:57.193 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296537448786300928[0;39m ------------- 结束 耗时：3 ms -------------
+2023-03-30 14:53:58.834 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296537455681736704[0;39m ------------- 开始 -------------
+2023-03-30 14:53:58.834 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296537455681736704[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 14:53:58.834 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296537455681736704[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 14:53:58.834 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296537455681736704[0;39m 远程地址: 127.0.0.1
+2023-03-30 14:53:58.834 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296537455681736704[0;39m 请求参数: [{}]
+2023-03-30 14:53:58.836 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296537455681736704[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 14:53:58.837 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296537455681736704[0;39m ------------- 结束 耗时：3 ms -------------
+2023-03-30 14:54:00.186 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296537461352435712[0;39m ------------- 开始 -------------
+2023-03-30 14:54:00.186 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296537461352435712[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 14:54:00.187 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296537461352435712[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 14:54:00.187 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296537461352435712[0;39m 远程地址: 127.0.0.1
+2023-03-30 14:54:00.187 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296537461352435712[0;39m 请求参数: [{}]
+2023-03-30 14:54:00.188 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296537461352435712[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 14:54:00.189 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296537461352435712[0;39m ------------- 结束 耗时：3 ms -------------
+2023-03-30 15:05:05.463 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296540251726417920[0;39m ------------- 开始 -------------
+2023-03-30 15:05:05.464 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296540251726417920[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 15:05:05.464 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296540251726417920[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 15:05:05.464 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296540251726417920[0;39m 远程地址: 127.0.0.1
+2023-03-30 15:05:05.464 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296540251726417920[0;39m 请求参数: [{}]
+2023-03-30 15:05:05.467 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296540251726417920[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 15:05:05.467 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296540251726417920[0;39m ------------- 结束 耗时：4 ms -------------
+2023-03-30 15:05:07.270 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296540259305525248[0;39m ------------- 开始 -------------
+2023-03-30 15:05:07.270 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296540259305525248[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 15:05:07.271 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296540259305525248[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 15:05:07.271 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296540259305525248[0;39m 远程地址: 127.0.0.1
+2023-03-30 15:05:07.271 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296540259305525248[0;39m 请求参数: [{}]
+2023-03-30 15:05:07.273 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296540259305525248[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 15:05:07.273 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296540259305525248[0;39m ------------- 结束 耗时：3 ms -------------
+2023-03-30 15:06:55.657 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296540713913552896[0;39m ------------- 开始 -------------
+2023-03-30 15:06:55.657 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296540713913552896[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 15:06:55.657 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296540713913552896[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 15:06:55.657 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296540713913552896[0;39m 远程地址: 127.0.0.1
+2023-03-30 15:06:55.658 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296540713913552896[0;39m 请求参数: [{}]
+2023-03-30 15:06:55.659 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296540713913552896[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 15:06:55.659 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296540713913552896[0;39m ------------- 结束 耗时：2 ms -------------
+2023-03-30 15:06:56.863 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296540718971883520[0;39m ------------- 开始 -------------
+2023-03-30 15:06:56.863 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296540718971883520[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 15:06:56.863 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296540718971883520[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 15:06:56.863 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296540718971883520[0;39m 远程地址: 127.0.0.1
+2023-03-30 15:06:56.863 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296540718971883520[0;39m 请求参数: [{}]
+2023-03-30 15:06:56.864 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296540718971883520[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 15:06:56.865 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296540718971883520[0;39m ------------- 结束 耗时：2 ms -------------
+2023-03-30 15:10:40.271 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296541656012951552[0;39m ------------- 开始 -------------
+2023-03-30 15:10:40.272 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296541656012951552[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 15:10:40.272 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296541656012951552[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 15:10:40.272 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296541656012951552[0;39m 远程地址: 127.0.0.1
+2023-03-30 15:10:40.272 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296541656012951552[0;39m 请求参数: [{}]
+2023-03-30 15:10:40.274 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296541656012951552[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 15:10:40.274 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296541656012951552[0;39m ------------- 结束 耗时：3 ms -------------
+2023-03-30 15:46:24.519 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296550649640914944[0;39m ------------- 开始 -------------
+2023-03-30 15:46:24.520 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296550649640914944[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 15:46:24.520 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296550649640914944[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 15:46:24.520 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296550649640914944[0;39m 远程地址: 127.0.0.1
+2023-03-30 15:46:24.521 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296550649640914944[0;39m 请求参数: [{}]
+2023-03-30 15:46:24.525 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296550649640914944[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 15:46:24.525 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296550649640914944[0;39m ------------- 结束 耗时：6 ms -------------
+2023-03-30 15:46:55.718 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296550780499005440[0;39m ------------- 开始 -------------
+2023-03-30 15:46:55.718 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296550780499005440[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 15:46:55.719 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296550780499005440[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 15:46:55.719 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296550780499005440[0;39m 远程地址: 127.0.0.1
+2023-03-30 15:46:55.720 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296550780499005440[0;39m 请求参数: [{}]
+2023-03-30 15:46:55.725 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296550780499005440[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 15:46:55.725 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296550780499005440[0;39m ------------- 结束 耗时：7 ms -------------
+2023-03-30 15:47:00.816 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296550801881567232[0;39m ------------- 开始 -------------
+2023-03-30 15:47:00.817 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296550801881567232[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 15:47:00.817 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296550801881567232[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 15:47:00.817 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296550801881567232[0;39m 远程地址: 127.0.0.1
+2023-03-30 15:47:00.817 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296550801881567232[0;39m 请求参数: [{}]
+2023-03-30 15:47:00.820 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296550801881567232[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 15:47:00.821 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296550801881567232[0;39m ------------- 结束 耗时：5 ms -------------
+2023-03-30 15:49:38.384 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296551462769659904[0;39m ------------- 开始 -------------
+2023-03-30 15:49:38.385 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296551462769659904[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 15:49:38.386 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296551462769659904[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 15:49:38.386 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296551462769659904[0;39m 远程地址: 127.0.0.1
+2023-03-30 15:49:38.386 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296551462769659904[0;39m 请求参数: [{}]
+2023-03-30 15:49:38.390 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296551462769659904[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 15:49:38.390 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296551462769659904[0;39m ------------- 结束 耗时：6 ms -------------
+2023-03-30 16:08:12.773 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296556136855900160[0;39m ------------- 开始 -------------
+2023-03-30 16:08:12.774 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296556136855900160[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 16:08:12.774 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296556136855900160[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:08:12.774 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296556136855900160[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:08:12.774 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296556136855900160[0;39m 请求参数: [{}]
+2023-03-30 16:08:12.777 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296556136855900160[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 16:08:12.778 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296556136855900160[0;39m ------------- 结束 耗时：5 ms -------------
+2023-03-30 16:08:13.937 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296556141738070016[0;39m ------------- 开始 -------------
+2023-03-30 16:08:13.937 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296556141738070016[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 16:08:13.938 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296556141738070016[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:08:13.938 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296556141738070016[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:08:13.938 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296556141738070016[0;39m 请求参数: [{}]
+2023-03-30 16:08:13.941 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296556141738070016[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 16:08:13.941 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296556141738070016[0;39m ------------- 结束 耗时：4 ms -------------
+2023-03-30 16:08:15.285 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296556147391991808[0;39m ------------- 开始 -------------
+2023-03-30 16:08:15.285 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296556147391991808[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-30 16:08:15.285 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296556147391991808[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:08:15.286 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296556147391991808[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:08:15.286 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296556147391991808[0;39m 请求参数: [{}]
+2023-03-30 16:08:15.289 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296556147391991808[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"success":true}
+2023-03-30 16:08:15.289 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296556147391991808[0;39m ------------- 结束 耗时：4 ms -------------
+2023-03-30 16:15:27.324 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 29 class path changes (0 additions, 29 deletions, 0 modifications)
+2023-03-30 16:15:27.347 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:15:27.348 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:15:27.350 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-30 16:15:27.356 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:15:27.358 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:15:27.366 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-03-30 16:15:27.369 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-03-30 16:15:27.602 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 26812 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:15:27.602 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:15:27.881 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.example.springbootdemothree.mapper]' package. Please check your configuration.
+2023-03-30 16:15:28.005 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:15:28.007 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:15:28.008 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:15:28.009 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:15:28.032 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:15:28.032 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 426 ms
+2023-03-30 16:15:28.217 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\idea_workspace\SpringbootDemoThree\target\classes\mapper\DemoMapper.xml]'
+2023-03-30 16:15:28.219 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:15:28.238 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-30 16:15:28.268 ERROR org.springframework.boot.SpringApplication        :822  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\idea_workspace\SpringbootDemoThree\target\classes\mapper\DemoMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at com.example.springbootdemothree.config.SpringbootDemoThreeApplication.main(SpringbootDemoThreeApplication.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\idea_workspace\SpringbootDemoThree\target\classes\mapper\DemoMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 20 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\idea_workspace\SpringbootDemoThree\target\classes\mapper\DemoMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:615)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:492)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:635)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 21 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_workspace\SpringbootDemoThree\target\classes\mapper\DemoMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.springbootdemothree.domain.Demo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.springbootdemothree.domain.Demo
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	... 27 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.springbootdemothree.domain.Demo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.springbootdemothree.domain.Demo
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 29 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.springbootdemothree.domain.Demo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.springbootdemothree.domain.Demo
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.springbootdemothree.domain.Demo
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 35 common frames omitted
+2023-03-30 16:15:33.194 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 26812 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:15:33.194 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:15:33.607 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:15:33.608 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:15:33.608 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:15:33.609 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:15:33.619 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:15:33.619 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 422 ms
+2023-03-30 16:15:34.336 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:15:34.344 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:15:34.383 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:15:34.390 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:15:34.409 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.243 seconds (process running for 7640.82)
+2023-03-30 16:15:34.413 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-30 16:15:34.414 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:15:34.415 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:15:46.286 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 16:15:46.286 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-03-30 16:15:46.288 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 2 ms
+2023-03-30 16:15:46.292 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296558039052455936[0;39m ------------- 开始 -------------
+2023-03-30 16:15:46.293 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296558039052455936[0;39m 请求地址: http://localhost:8081/ebook/list GET
+2023-03-30 16:15:46.293 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296558039052455936[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:15:46.293 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296558039052455936[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:15:46.296 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296558039052455936[0;39m 请求参数: [{"name":"java"}]
+2023-03-30 16:15:46.302 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m296558039052455936[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoClassDefFoundError: com/github/pagehelper/PageHelper] with root cause
+java.lang.ClassNotFoundException: com.github.pagehelper.PageHelper
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:495)
+	at java.base/java.lang.Class.forName(Class.java:474)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at com.example.springbootdemothree.service.EbookService.list(EbookService.java:22)
+	at com.example.springbootdemothree.controller.EbookController.list(EbookController.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.example.springbootdemothree.aspect.LogAspect.doAround(LogAspect.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at com.example.springbootdemothree.controller.EbookController$$SpringCGLIB$$0.list(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-03-30 16:17:09.278 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:17:09.279 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:17:09.305 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-30 16:17:09.305 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-30 16:17:10.030 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:17:10.035 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:17:10.035 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:17:10.035 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:17:10.061 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:17:10.061 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 755 ms
+2023-03-30 16:17:10.663 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:17:10.667 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:17:10.696 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:17:10.707 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:17:10.715 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.675 seconds (process running for 2.149)
+2023-03-30 16:17:10.719 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:17:10.719 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:17:11.194 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 16:17:11.195 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-03-30 16:17:11.195 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-03-30 16:17:11.196 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-03-30 16:17:11.275 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77708e28
+2023-03-30 16:17:11.277 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-03-30 16:17:16.852 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296558418884431872[0;39m ------------- 开始 -------------
+2023-03-30 16:17:16.852 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296558418884431872[0;39m 请求地址: http://localhost:8081/ebook/list GET
+2023-03-30 16:17:16.852 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296558418884431872[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:17:16.852 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296558418884431872[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:17:16.886 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296558418884431872[0;39m 请求参数: [{"name":"java"}]
+2023-03-30 16:17:16.964 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296558418884431872[0;39m 返回结果: {"content":[{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"}],"success":true}
+2023-03-30 16:17:16.965 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296558418884431872[0;39m ------------- 结束 耗时：114 ms -------------
+2023-03-30 16:18:04.764 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296558619846119424[0;39m ------------- 开始 -------------
+2023-03-30 16:18:04.765 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296558619846119424[0;39m 请求地址: http://localhost:8081/ebook/list GET
+2023-03-30 16:18:04.765 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296558619846119424[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:18:04.765 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296558619846119424[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:18:04.766 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296558619846119424[0;39m 请求参数: [{}]
+2023-03-30 16:18:04.771 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296558619846119424[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"}],"success":true}
+2023-03-30 16:18:04.771 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296558619846119424[0;39m ------------- 结束 耗时：7 ms -------------
+2023-03-30 16:18:10.249 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296558642851876864[0;39m ------------- 开始 -------------
+2023-03-30 16:18:10.249 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296558642851876864[0;39m 请求地址: http://localhost:8081/ebook/list GET
+2023-03-30 16:18:10.249 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296558642851876864[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:18:10.250 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296558642851876864[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:18:10.250 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296558642851876864[0;39m 请求参数: [{}]
+2023-03-30 16:18:10.254 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296558642851876864[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"}],"success":true}
+2023-03-30 16:18:10.254 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296558642851876864[0;39m ------------- 结束 耗时：5 ms -------------
+2023-03-30 16:20:13.878 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-30 16:20:13.885 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:13.885 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:20:13.886 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-30 16:20:13.887 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:13.888 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:13.891 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-03-30 16:20:13.895 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-03-30 16:20:13.945 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:20:13.945 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:20:14.114 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:20:14.115 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:14.115 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:20:14.115 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:20:14.125 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:20:14.126 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 180 ms
+2023-03-30 16:20:14.376 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:20:14.379 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:20:14.390 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:14.393 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:20:14.398 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.469 seconds (process running for 185.832)
+2023-03-30 16:20:14.399 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-30 16:20:14.399 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:20:14.399 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:20:33.196 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-30 16:20:33.201 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:33.201 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:20:33.202 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:33.203 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:33.240 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:20:33.240 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:20:33.388 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:20:33.389 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:33.389 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:20:33.389 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:20:33.394 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:20:33.395 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 154 ms
+2023-03-30 16:20:33.606 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:20:33.608 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:20:33.619 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:20:33.621 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:20:33.625 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.399 seconds (process running for 205.059)
+2023-03-30 16:20:33.626 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-30 16:20:33.627 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:20:33.627 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:21:02.462 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-30 16:21:02.472 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:21:02.472 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:21:02.473 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:21:02.474 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:21:02.522 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:21:02.522 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:21:02.646 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:21:02.647 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:21:02.647 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:21:02.647 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:21:02.652 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:21:02.653 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 130 ms
+2023-03-30 16:21:02.853 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:21:02.855 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:21:02.863 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:21:02.867 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:21:02.871 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.361 seconds (process running for 234.305)
+2023-03-30 16:21:02.872 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-30 16:21:02.873 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:21:02.873 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:22:09.285 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 16:22:09.285 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-03-30 16:22:09.286 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-03-30 16:22:09.287 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296559645449916416[0;39m ------------- 开始 -------------
+2023-03-30 16:22:09.287 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296559645449916416[0;39m 请求地址: http://localhost:8081/ebook/list GET
+2023-03-30 16:22:09.287 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296559645449916416[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:22:09.287 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296559645449916416[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:22:09.288 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296559645449916416[0;39m 请求参数: [{}]
+2023-03-30 16:22:09.291 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m296559645449916416[0;39m HikariPool-2 - Starting...
+2023-03-30 16:22:09.295 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m296559645449916416[0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23881196
+2023-03-30 16:22:09.295 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m296559645449916416[0;39m HikariPool-2 - Start completed.
+2023-03-30 16:22:09.296 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296559645449916416[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-30 16:22:09.303 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296559645449916416[0;39m ==> Parameters: 
+2023-03-30 16:22:09.310 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296559645449916416[0;39m <==    Columns: count(0)
+2023-03-30 16:22:09.310 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296559645449916416[0;39m <==        Row: 5
+2023-03-30 16:22:09.311 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296559645449916416[0;39m <==      Total: 1
+2023-03-30 16:22:09.311 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296559645449916416[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-03-30 16:22:09.312 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296559645449916416[0;39m ==> Parameters: 3(Integer)
+2023-03-30 16:22:09.313 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296559645449916416[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-03-30 16:22:09.313 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296559645449916416[0;39m <==        Row: 1, 鬼吹灯, null, null, 恐怖类小说, /image/cover2.png, null, null, null
+2023-03-30 16:22:09.314 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296559645449916416[0;39m <==        Row: 2, VUE入门教程, null, null, 零基础入门VUE开发, /image/cover1.png, null, null, null
+2023-03-30 16:22:09.314 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296559645449916416[0;39m <==        Row: 3, JAVA深入理解, null, null, 更加深层次了解JAVA开发, null, null, null, null
+2023-03-30 16:22:09.314 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296559645449916416[0;39m <==      Total: 3
+2023-03-30 16:22:09.316 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296559645449916416[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"}],"success":true}
+2023-03-30 16:22:09.317 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296559645449916416[0;39m ------------- 结束 耗时：30 ms -------------
+2023-03-30 16:28:47.185 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-03-30 16:28:47.192 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:47.193 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:28:47.193 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-30 16:28:47.194 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1589)
+2023-03-30 16:28:47.194 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:47.195 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:47.196 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2023-03-30 16:28:47.197 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2023-03-30 16:28:47.235 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:28:47.236 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:28:47.389 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:28:47.390 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:47.390 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:28:47.390 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:28:47.396 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:28:47.396 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 159 ms
+2023-03-30 16:28:47.665 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:28:47.668 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:28:47.680 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:47.682 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:28:47.687 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.466 seconds (process running for 699.121)
+2023-03-30 16:28:47.688 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-30 16:28:47.688 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:28:47.688 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:28:49.089 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-03-30 16:28:49.096 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:49.097 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:28:49.098 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:49.098 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:49.144 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:28:49.144 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:28:49.272 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:28:49.272 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:49.272 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:28:49.273 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:28:49.278 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:28:49.278 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 132 ms
+2023-03-30 16:28:49.495 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:28:49.498 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:28:49.507 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:28:49.508 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:28:49.512 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.378 seconds (process running for 700.946)
+2023-03-30 16:28:49.513 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-30 16:28:49.513 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:28:49.513 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:29:14.379 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-03-30 16:29:14.384 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:14.384 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:29:14.385 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:14.385 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:14.423 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:29:14.424 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:29:14.582 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:29:14.582 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:14.582 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:29:14.582 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:29:14.589 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:29:14.589 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 164 ms
+2023-03-30 16:29:14.662 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [D:\idea_workspace\SpringbootDemoThree\target\classes\com\example\springbootdemothree\controller\EbookController.class]: Post-processing of merged bean definition failed
+2023-03-30 16:29:14.662 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:29:14.670 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-30 16:29:14.679 ERROR org.springframework.boot.SpringApplication        :822  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [D:\idea_workspace\SpringbootDemoThree\target\classes\com\example\springbootdemothree\controller\EbookController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at com.example.springbootdemothree.config.SpringbootDemoThreeApplication.main(SpringbootDemoThreeApplication.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.springbootdemothree.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5a37eb5d]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:740)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:672)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:340)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:277)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1083)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	... 16 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/example/springbootdemothree/service/EbookService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3353)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2424)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:735)
+	... 22 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.springbootdemothree.service.EbookService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:495)
+	at java.base/java.lang.Class.forName(Class.java:474)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 26 common frames omitted
+2023-03-30 16:29:27.295 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:29:27.295 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:29:27.431 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:29:27.432 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:27.432 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:29:27.432 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:29:27.438 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:29:27.438 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 142 ms
+2023-03-30 16:29:27.648 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:29:27.650 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:29:27.658 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:27.660 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:29:27.665 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.38 seconds (process running for 739.098)
+2023-03-30 16:29:27.666 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-30 16:29:27.666 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:29:27.666 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:29:40.233 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-03-30 16:29:40.238 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:40.238 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:29:40.239 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:40.240 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:40.296 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:29:40.296 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:29:40.428 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:29:40.428 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:29:40.428 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:29:40.428 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:29:40.434 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:29:40.434 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 137 ms
+2023-03-30 16:29:40.497 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [D:\idea_workspace\SpringbootDemoThree\target\classes\com\example\springbootdemothree\controller\EbookController.class]: Post-processing of merged bean definition failed
+2023-03-30 16:29:40.498 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-03-30 16:29:40.502 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-30 16:29:40.503 ERROR org.springframework.boot.SpringApplication        :822  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [D:\idea_workspace\SpringbootDemoThree\target\classes\com\example\springbootdemothree\controller\EbookController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at com.example.springbootdemothree.config.SpringbootDemoThreeApplication.main(SpringbootDemoThreeApplication.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.springbootdemothree.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@349362d6]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:740)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:672)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:340)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:277)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1083)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	... 16 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/example/springbootdemothree/service/EbookService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3353)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2424)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:735)
+	... 22 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.springbootdemothree.service.EbookService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:495)
+	at java.base/java.lang.Class.forName(Class.java:474)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 26 common frames omitted
+2023-03-30 16:30:36.861 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 24884 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:30:36.862 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:30:37.261 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:30:37.262 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:30:37.262 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:30:37.262 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:30:37.276 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:30:37.277 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 411 ms
+2023-03-30 16:30:37.783 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:30:37.788 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:30:37.804 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:30:37.807 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:30:37.814 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 0.988 seconds (process running for 809.248)
+2023-03-30 16:30:37.817 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-03-30 16:30:37.818 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:30:37.818 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:30:43.059 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 23308 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:30:43.061 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:30:43.088 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-30 16:30:43.088 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-30 16:30:43.802 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:30:43.807 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:30:43.807 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:30:43.807 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:30:43.833 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:30:43.834 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 746 ms
+2023-03-30 16:30:44.438 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:30:44.443 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:30:44.473 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:30:44.485 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:30:44.493 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.67 seconds (process running for 2.154)
+2023-03-30 16:30:44.497 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:30:44.497 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:30:44.907 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 16:30:44.907 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-03-30 16:30:44.908 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-03-30 16:30:44.908 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-03-30 16:30:44.981 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@700a6f03
+2023-03-30 16:30:44.987 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-03-30 16:30:50.960 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296561833505067008[0;39m ------------- 开始 -------------
+2023-03-30 16:30:50.961 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296561833505067008[0;39m 请求地址: http://localhost:8081/ebook/list GET
+2023-03-30 16:30:50.961 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296561833505067008[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:30:50.961 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296561833505067008[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:30:50.994 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296561833505067008[0;39m 请求参数: [{}]
+2023-03-30 16:30:51.049 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296561833505067008[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-30 16:30:51.061 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296561833505067008[0;39m ==> Parameters: 
+2023-03-30 16:30:51.072 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296561833505067008[0;39m <==    Columns: count(0)
+2023-03-30 16:30:51.073 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296561833505067008[0;39m <==        Row: 5
+2023-03-30 16:30:51.073 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296561833505067008[0;39m <==      Total: 1
+2023-03-30 16:30:51.075 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296561833505067008[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-03-30 16:30:51.075 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296561833505067008[0;39m ==> Parameters: 3(Integer)
+2023-03-30 16:30:51.075 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296561833505067008[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-03-30 16:30:51.076 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296561833505067008[0;39m <==        Row: 1, 鬼吹灯, null, null, 恐怖类小说, /image/cover2.png, null, null, null
+2023-03-30 16:30:51.076 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296561833505067008[0;39m <==        Row: 2, VUE入门教程, null, null, 零基础入门VUE开发, /image/cover1.png, null, null, null
+2023-03-30 16:30:51.076 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296561833505067008[0;39m <==        Row: 3, JAVA深入理解, null, null, 更加深层次了解JAVA开发, null, null, null, null
+2023-03-30 16:30:51.077 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296561833505067008[0;39m <==      Total: 3
+2023-03-30 16:30:51.077 INFO  c.example.springbootdemothree.service.EbookService:39   [32m296561833505067008[0;39m 总行数
+2023-03-30 16:30:51.077 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296561833505067008[0;39m 总页数
+2023-03-30 16:30:51.083 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296561833505067008[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"}],"success":true}
+2023-03-30 16:30:51.083 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296561833505067008[0;39m ------------- 结束 耗时：123 ms -------------
+2023-03-30 16:31:12.747 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-03-30 16:31:12.751 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-03-30 16:31:16.721 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 32944 (D:\idea_workspace\SpringbootDemoThree\target\classes started by 汪敬一 in D:\idea_workspace\SpringbootDemoThree)
+2023-03-30 16:31:16.723 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-03-30 16:31:16.749 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-30 16:31:16.749 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-30 16:31:17.505 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-03-30 16:31:17.510 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:31:17.510 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-03-30 16:31:17.510 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-03-30 16:31:17.539 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-03-30 16:31:17.539 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 790 ms
+2023-03-30 16:31:18.142 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-03-30 16:31:18.146 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-30 16:31:18.175 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 16:31:18.186 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-30 16:31:18.194 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.71 seconds (process running for 2.502)
+2023-03-30 16:31:18.198 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-03-30 16:31:18.198 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-03-30 16:31:18.604 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 16:31:18.604 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-03-30 16:31:18.605 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-03-30 16:31:18.605 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-03-30 16:31:18.681 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8322146
+2023-03-30 16:31:18.687 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-03-30 16:31:23.012 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296561967940898816[0;39m ------------- 开始 -------------
+2023-03-30 16:31:23.013 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296561967940898816[0;39m 请求地址: http://localhost:8081/ebook/list GET
+2023-03-30 16:31:23.013 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296561967940898816[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-30 16:31:23.013 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296561967940898816[0;39m 远程地址: 127.0.0.1
+2023-03-30 16:31:23.047 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296561967940898816[0;39m 请求参数: [{}]
+2023-03-30 16:31:23.102 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296561967940898816[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-30 16:31:23.115 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296561967940898816[0;39m ==> Parameters: 
+2023-03-30 16:31:23.127 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296561967940898816[0;39m <==    Columns: count(0)
+2023-03-30 16:31:23.127 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296561967940898816[0;39m <==        Row: 5
+2023-03-30 16:31:23.129 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296561967940898816[0;39m <==      Total: 1
+2023-03-30 16:31:23.130 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296561967940898816[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-03-30 16:31:23.131 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296561967940898816[0;39m ==> Parameters: 3(Integer)
+2023-03-30 16:31:23.132 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296561967940898816[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-03-30 16:31:23.132 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296561967940898816[0;39m <==        Row: 1, 鬼吹灯, null, null, 恐怖类小说, /image/cover2.png, null, null, null
+2023-03-30 16:31:23.133 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296561967940898816[0;39m <==        Row: 2, VUE入门教程, null, null, 零基础入门VUE开发, /image/cover1.png, null, null, null
+2023-03-30 16:31:23.133 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296561967940898816[0;39m <==        Row: 3, JAVA深入理解, null, null, 更加深层次了解JAVA开发, null, null, null, null
+2023-03-30 16:31:23.133 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296561967940898816[0;39m <==      Total: 3
+2023-03-30 16:31:23.134 INFO  c.example.springbootdemothree.service.EbookService:39   [32m296561967940898816[0;39m 总行数：0
+2023-03-30 16:31:23.134 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296561967940898816[0;39m 总页数：0
+2023-03-30 16:31:23.139 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296561967940898816[0;39m 返回结果: {"content":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"}],"success":true}
+2023-03-30 16:31:23.140 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296561967940898816[0;39m ------------- 结束 耗时：128 ms -------------
+2023-03-30 16:31:50.143 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-03-30 16:31:50.147 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
