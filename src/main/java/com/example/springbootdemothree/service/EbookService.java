@@ -30,8 +30,7 @@ public class EbookService {
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
-
-        criteria.andNameLike("%" + req.getName() + "%");
+            criteria.andNameLike("%" + req.getName() + "%");
         }
         PageHelper.startPage(req.getPage(), req.getSize());
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
@@ -52,8 +51,8 @@ public class EbookService {
 
         //列表复制
         List<EbookResp> list = CopyUtil.copyList(ebookList, EbookResp.class);
-        PageResp<EbookResp> pageResp = new PageResp<>();
-        pageResp.setPage(pageInfo.getTotal());
+        PageResp<EbookResp> pageResp = new PageResp();
+        pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
         return pageResp;
     }

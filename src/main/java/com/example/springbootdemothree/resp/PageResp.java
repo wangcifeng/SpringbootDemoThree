@@ -3,16 +3,16 @@ package com.example.springbootdemothree.resp;
 import java.util.List;
 
 public class PageResp<T> {
-    private Long page;
+    private Long total;
 
     private List<T> list;
 
-    public Long getPage() {
-        return page;
+    public Long getTotal() {
+        return total;
     }
 
-    public void setPage(Long page) {
-        this.page = page;
+    public void setTotal(Long total) {
+        this.total = total;
     }
 
     public List<T> getList() {
@@ -26,7 +26,7 @@ public class PageResp<T> {
     @Override
     public String toString() {
         return "PageResp{" +
-                "page=" + page +
+                "total=" + total +
                 ", list=" + list +
                 '}';
     }
