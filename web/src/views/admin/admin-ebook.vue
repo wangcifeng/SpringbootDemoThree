@@ -3,7 +3,21 @@
     <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
 
       <p>
-        <a-button type="primary" @click="add(record)" size="large">新增</a-button>
+        <a-form layout="inline" :model="param">
+          <a-form-item >
+             
+            <a-input v-model:value="param.name" placeholder="名称" size="large"></a-input>
+          </a-form-item>
+          <a-form-item >
+             <a-button v-model:value="param.name" type="primary" @click="handleQuery({page:1,size:pagination.pageSize})" size="large">查询</a-button>
+
+          </a-form-item>
+          <a-form-item >
+             <a-button v-model:value="param.name" type="primary" @click="add(record)" size="large">新增</a-button>
+
+          </a-form-item>
+
+        </a-form>
       </p>
 
       <a-table :columns="columns" :row-key="record => record.id" :data-source="ebooks" :pagination="pagination"
@@ -114,7 +128,8 @@ export default defineComponent({
       axios.get("/ebook/list", {
         params: {
           page: params.page,
-          size: params.size
+          size: params.size,
+          name: param.value.name
         }
       }).then((response) => {
         loading.value = false;
@@ -209,12 +224,14 @@ export default defineComponent({
       columns,
       loading,
       ebook,
+      param,
 
       handleTableChange,
       edit,
       handleOk,
       add,
       deleteHandle,
+      handleQuery,
 
       modalVisible,
       modalLoading
