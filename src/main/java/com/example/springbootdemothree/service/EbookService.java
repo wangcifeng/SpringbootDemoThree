@@ -8,6 +8,7 @@ import com.example.springbootdemothree.req.EbookSaveReq;
 import com.example.springbootdemothree.resp.EbookQueryResp;
 import com.example.springbootdemothree.resp.PageResp;
 import com.example.springbootdemothree.util.CopyUtil;
+import com.example.springbootdemothree.util.SnowFlake;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import jakarta.annotation.Resource;
@@ -26,6 +27,9 @@ public class EbookService {
 
     @Resource
     private EbookMapper ebookMapper;
+
+    @Resource
+    private SnowFlake snowFlake;
 
     public PageResp<EbookQueryResp> list(EbookQueryReq req) {
         EbookExample ebookExample = new EbookExample();
@@ -65,6 +69,8 @@ public class EbookService {
         Ebook ebook = CopyUtil.copy(req, Ebook.class);
         if (ObjectUtils.isEmpty(req.getId())) {
             //新增
+            ebook.setId(snowFlake.nextId());
+
             ebookMapper.insert(ebook);
         } else {
             //更新
