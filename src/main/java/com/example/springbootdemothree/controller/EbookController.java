@@ -1,14 +1,13 @@
 package com.example.springbootdemothree.controller;
 
-import com.example.springbootdemothree.req.EbookReq;
+import com.example.springbootdemothree.req.EbookQueryReq;
+import com.example.springbootdemothree.req.EbookSaveReq;
 import com.example.springbootdemothree.resp.CommonResp;
-import com.example.springbootdemothree.resp.EbookResp;
+import com.example.springbootdemothree.resp.EbookQueryResp;
 import com.example.springbootdemothree.resp.PageResp;
 import com.example.springbootdemothree.service.EbookService;
 import jakarta.annotation.Resource;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/ebook")
@@ -17,10 +16,17 @@ public class EbookController {
     private EbookService ebookService;
 
     @GetMapping("/list")
-    public CommonResp list (EbookReq req) {
-        CommonResp<PageResp<EbookResp>> resp = new CommonResp<>();
-        PageResp<EbookResp> list = ebookService.list(req);
+    public CommonResp list (EbookQueryReq req) {
+        CommonResp<PageResp<EbookQueryResp>> resp = new CommonResp<>();
+        PageResp<EbookQueryResp> list = ebookService.list(req);
         resp.setContent(list);
+        return  resp;
+    }
+
+    @PostMapping ("/save")
+    public CommonResp save (@RequestBody EbookSaveReq req) {
+        CommonResp resp = new CommonResp<>();
+        ebookService.save(req);
         return  resp;
     }
 }

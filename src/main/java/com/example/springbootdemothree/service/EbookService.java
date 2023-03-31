@@ -3,8 +3,9 @@ package com.example.springbootdemothree.service;
 import com.example.springbootdemothree.domain.Ebook;
 import com.example.springbootdemothree.domain.EbookExample;
 import com.example.springbootdemothree.mapper.EbookMapper;
-import com.example.springbootdemothree.req.EbookReq;
-import com.example.springbootdemothree.resp.EbookResp;
+import com.example.springbootdemothree.req.EbookQueryReq;
+import com.example.springbootdemothree.req.EbookSaveReq;
+import com.example.springbootdemothree.resp.EbookQueryResp;
 import com.example.springbootdemothree.resp.PageResp;
 import com.example.springbootdemothree.util.CopyUtil;
 import com.github.pagehelper.PageHelper;
@@ -26,7 +27,7 @@ public class EbookService {
     @Resource
     private EbookMapper ebookMapper;
 
-    public PageResp<EbookResp> list(EbookReq req) {
+    public PageResp<EbookQueryResp> list(EbookQueryReq req) {
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
@@ -50,10 +51,24 @@ public class EbookService {
 
 
         //列表复制
-        List<EbookResp> list = CopyUtil.copyList(ebookList, EbookResp.class);
-        PageResp<EbookResp> pageResp = new PageResp();
+        List<EbookQueryResp> list = CopyUtil.copyList(ebookList, EbookQueryResp.class);
+        PageResp<EbookQueryResp> pageResp = new PageResp();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
         return pageResp;
+    }
+
+    /**
+     * 保存方法
+     */
+    public void save(EbookSaveReq req) {
+        Ebook ebook = CopyUtil.copy(req, Ebook.class);
+        if (ObjectUtils.isEmpty(req.getId())) {
+            //新增
+            ebookMapper.insert(ebook);
+        } else {
+            //更新
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
     }
 }

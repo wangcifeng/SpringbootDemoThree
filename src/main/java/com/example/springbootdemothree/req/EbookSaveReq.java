@@ -1,6 +1,6 @@
-package com.example.springbootdemothree.resp;
+package com.example.springbootdemothree.req;
 
-public class EbookResp {
+public class EbookSaveReq {
     private Long id;
 
     private String name;
