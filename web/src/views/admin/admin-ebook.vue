@@ -15,7 +15,10 @@
         <template v-slot:action="{ text, record }">
           <a-space size="small">
             <a-button type="primary" @click="edit(record)">编辑</a-button>
-            <a-button type="danger">删除</a-button>
+
+            <a-popconfirm title="删除后不可恢复，确认删除吗?" ok-text="是" cancel-text="否" @confirm="deleteHandle(record.id)">
+              <a-button type="danger">删除</a-button>
+            </a-popconfirm>
           </a-space>
         </template>
       </a-table>
@@ -61,7 +64,7 @@ export default defineComponent({
   setup() {
 
     const param = ref();
-      param.value = {};
+    param.value = {};
     const columns = [
       {
         title: '封面',
@@ -148,9 +151,9 @@ export default defineComponent({
 
           //重新加载列表
           handleQuery({
-        page: pagination.value.current,
-        size: pagination.value.pageSize
-      });
+            page: pagination.value.current,
+            size: pagination.value.pageSize
+          });
         }
       });
     };
@@ -171,6 +174,21 @@ export default defineComponent({
       ebook.value = {};
     };
 
+    /**
+    * 删除方法
+    */
+    const deleteHandle = (id) => {
+      axios.delete("/ebook/delete/" + id).then((response) => {
+        const data = response.data
+        if (data.success) {
+          //重新加载列表
+          handleQuery({
+            page: pagination.value.current,
+            size: pagination.value.pageSize
+          });
+        }
+      });
+    };
 
     onMounted(() => {
       handleQuery({
@@ -190,6 +208,7 @@ export default defineComponent({
       edit,
       handleOk,
       add,
+      deleteHandle,
 
       modalVisible,
       modalLoading

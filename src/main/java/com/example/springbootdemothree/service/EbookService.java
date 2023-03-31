@@ -77,4 +77,11 @@ public class EbookService {
             ebookMapper.updateByPrimaryKey(ebook);
         }
     }
+
+    /**
+     * 删除功能
+     */
+    public void delete (Long id) {
+        ebookMapper.deleteByPrimaryKey(id);
+    }
 }
