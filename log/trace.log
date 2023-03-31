@@ -163,3 +163,144 @@
 2023-03-31 09:26:47.741 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296817504737693696[0;39m 总页数：2
 2023-03-31 09:26:47.742 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296817504737693696[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"}],"total":5},"success":true}
 2023-03-31 09:26:47.742 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296817504737693696[0;39m ------------- 结束 耗时：10 ms -------------
+2023-03-31 09:31:10.676 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296818607604764672[0;39m ------------- 开始 -------------
+2023-03-31 09:31:10.676 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296818607604764672[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-31 09:31:10.677 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296818607604764672[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-31 09:31:10.677 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296818607604764672[0;39m 远程地址: 127.0.0.1
+2023-03-31 09:31:10.677 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296818607604764672[0;39m 请求参数: [{"page":0,"size":0}]
+2023-03-31 09:31:10.678 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818607604764672[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-31 09:31:10.679 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818607604764672[0;39m ==> Parameters: 
+2023-03-31 09:31:10.681 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818607604764672[0;39m <==    Columns: count(0)
+2023-03-31 09:31:10.681 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818607604764672[0;39m <==        Row: 5
+2023-03-31 09:31:10.681 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818607604764672[0;39m <==      Total: 1
+2023-03-31 09:31:10.681 INFO  c.example.springbootdemothree.service.EbookService:39   [32m296818607604764672[0;39m 总行数：5
+2023-03-31 09:31:10.681 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296818607604764672[0;39m 总页数：0
+2023-03-31 09:31:10.681 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296818607604764672[0;39m 返回结果: {"content":{"list":[],"total":5},"success":true}
+2023-03-31 09:31:10.681 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296818607604764672[0;39m ------------- 结束 耗时：5 ms -------------
+2023-03-31 09:31:12.811 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296818616559603712[0;39m ------------- 开始 -------------
+2023-03-31 09:31:12.811 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296818616559603712[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-31 09:31:12.811 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296818616559603712[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-31 09:31:12.811 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296818616559603712[0;39m 远程地址: 127.0.0.1
+2023-03-31 09:31:12.811 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296818616559603712[0;39m 请求参数: [{"page":1,"size":4}]
+2023-03-31 09:31:12.813 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818616559603712[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-31 09:31:12.814 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818616559603712[0;39m ==> Parameters: 
+2023-03-31 09:31:12.815 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818616559603712[0;39m <==    Columns: count(0)
+2023-03-31 09:31:12.815 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818616559603712[0;39m <==        Row: 5
+2023-03-31 09:31:12.815 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818616559603712[0;39m <==      Total: 1
+2023-03-31 09:31:12.816 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296818616559603712[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-03-31 09:31:12.816 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296818616559603712[0;39m ==> Parameters: 4(Integer)
+2023-03-31 09:31:12.817 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818616559603712[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-03-31 09:31:12.817 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818616559603712[0;39m <==        Row: 1, 鬼吹灯, null, null, 恐怖类小说, /image/cover2.png, null, null, null
+2023-03-31 09:31:12.817 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818616559603712[0;39m <==        Row: 2, VUE入门教程, null, null, 零基础入门VUE开发, /image/cover1.png, null, null, null
+2023-03-31 09:31:12.817 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818616559603712[0;39m <==        Row: 3, JAVA深入理解, null, null, 更加深层次了解JAVA开发, null, null, null, null
+2023-03-31 09:31:12.818 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818616559603712[0;39m <==        Row: 4, 高效学习, null, null, 更加高效的学习提高成绩, null, null, null, null
+2023-03-31 09:31:12.818 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296818616559603712[0;39m <==      Total: 4
+2023-03-31 09:31:12.819 INFO  c.example.springbootdemothree.service.EbookService:39   [32m296818616559603712[0;39m 总行数：5
+2023-03-31 09:31:12.819 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296818616559603712[0;39m 总页数：2
+2023-03-31 09:31:12.819 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296818616559603712[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"}],"total":5},"success":true}
+2023-03-31 09:31:12.819 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296818616559603712[0;39m ------------- 结束 耗时：8 ms -------------
+2023-03-31 09:31:13.494 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296818619424313344[0;39m ------------- 开始 -------------
+2023-03-31 09:31:13.494 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296818619424313344[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-31 09:31:13.494 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296818619424313344[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-31 09:31:13.494 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296818619424313344[0;39m 远程地址: 127.0.0.1
+2023-03-31 09:31:13.494 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296818619424313344[0;39m 请求参数: [{"page":0,"size":0}]
+2023-03-31 09:31:13.495 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818619424313344[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-31 09:31:13.496 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818619424313344[0;39m ==> Parameters: 
+2023-03-31 09:31:13.497 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818619424313344[0;39m <==    Columns: count(0)
+2023-03-31 09:31:13.498 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818619424313344[0;39m <==        Row: 5
+2023-03-31 09:31:13.498 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818619424313344[0;39m <==      Total: 1
+2023-03-31 09:31:13.498 INFO  c.example.springbootdemothree.service.EbookService:39   [32m296818619424313344[0;39m 总行数：5
+2023-03-31 09:31:13.498 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296818619424313344[0;39m 总页数：0
+2023-03-31 09:31:13.499 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296818619424313344[0;39m 返回结果: {"content":{"list":[],"total":5},"success":true}
+2023-03-31 09:31:13.499 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296818619424313344[0;39m ------------- 结束 耗时：5 ms -------------
+2023-03-31 09:31:17.883 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296818637833113600[0;39m ------------- 开始 -------------
+2023-03-31 09:31:17.883 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296818637833113600[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-31 09:31:17.883 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296818637833113600[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-31 09:31:17.883 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296818637833113600[0;39m 远程地址: 127.0.0.1
+2023-03-31 09:31:17.883 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296818637833113600[0;39m 请求参数: [{"page":1,"size":4}]
+2023-03-31 09:31:17.885 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818637833113600[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-31 09:31:17.886 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818637833113600[0;39m ==> Parameters: 
+2023-03-31 09:31:17.887 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818637833113600[0;39m <==    Columns: count(0)
+2023-03-31 09:31:17.887 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818637833113600[0;39m <==        Row: 5
+2023-03-31 09:31:17.887 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818637833113600[0;39m <==      Total: 1
+2023-03-31 09:31:17.887 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296818637833113600[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-03-31 09:31:17.888 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296818637833113600[0;39m ==> Parameters: 4(Integer)
+2023-03-31 09:31:17.888 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818637833113600[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-03-31 09:31:17.888 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818637833113600[0;39m <==        Row: 1, 鬼吹灯, null, null, 恐怖类小说, /image/cover2.png, null, null, null
+2023-03-31 09:31:17.889 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818637833113600[0;39m <==        Row: 2, VUE入门教程, null, null, 零基础入门VUE开发, /image/cover1.png, null, null, null
+2023-03-31 09:31:17.890 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818637833113600[0;39m <==        Row: 3, JAVA深入理解, null, null, 更加深层次了解JAVA开发, null, null, null, null
+2023-03-31 09:31:17.890 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818637833113600[0;39m <==        Row: 4, 高效学习, null, null, 更加高效的学习提高成绩, null, null, null, null
+2023-03-31 09:31:17.890 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296818637833113600[0;39m <==      Total: 4
+2023-03-31 09:31:17.890 INFO  c.example.springbootdemothree.service.EbookService:39   [32m296818637833113600[0;39m 总行数：5
+2023-03-31 09:31:17.891 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296818637833113600[0;39m 总页数：2
+2023-03-31 09:31:17.891 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296818637833113600[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"}],"total":5},"success":true}
+2023-03-31 09:31:17.891 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296818637833113600[0;39m ------------- 结束 耗时：8 ms -------------
+2023-03-31 09:32:34.678 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296818959934689280[0;39m ------------- 开始 -------------
+2023-03-31 09:32:34.678 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296818959934689280[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-31 09:32:34.678 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296818959934689280[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-31 09:32:34.678 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296818959934689280[0;39m 远程地址: 127.0.0.1
+2023-03-31 09:32:34.678 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296818959934689280[0;39m 请求参数: [{"page":1,"size":100}]
+2023-03-31 09:32:34.680 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818959934689280[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-31 09:32:34.680 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818959934689280[0;39m ==> Parameters: 
+2023-03-31 09:32:34.682 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818959934689280[0;39m <==    Columns: count(0)
+2023-03-31 09:32:34.682 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296818959934689280[0;39m <==        Row: 5
+2023-03-31 09:32:34.682 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296818959934689280[0;39m <==      Total: 1
+2023-03-31 09:32:34.683 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296818959934689280[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-03-31 09:32:34.683 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296818959934689280[0;39m ==> Parameters: 100(Integer)
+2023-03-31 09:32:34.683 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818959934689280[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-03-31 09:32:34.683 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818959934689280[0;39m <==        Row: 1, 鬼吹灯, null, null, 恐怖类小说, /image/cover2.png, null, null, null
+2023-03-31 09:32:34.684 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818959934689280[0;39m <==        Row: 2, VUE入门教程, null, null, 零基础入门VUE开发, /image/cover1.png, null, null, null
+2023-03-31 09:32:34.684 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818959934689280[0;39m <==        Row: 3, JAVA深入理解, null, null, 更加深层次了解JAVA开发, null, null, null, null
+2023-03-31 09:32:34.684 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818959934689280[0;39m <==        Row: 4, 高效学习, null, null, 更加高效的学习提高成绩, null, null, null, null
+2023-03-31 09:32:34.684 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296818959934689280[0;39m <==        Row: 5, 狂飙, null, null, 反黑除恶小说, null, null, null, null
+2023-03-31 09:32:34.684 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296818959934689280[0;39m <==      Total: 5
+2023-03-31 09:32:34.684 INFO  c.example.springbootdemothree.service.EbookService:39   [32m296818959934689280[0;39m 总行数：5
+2023-03-31 09:32:34.684 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296818959934689280[0;39m 总页数：1
+2023-03-31 09:32:34.685 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296818959934689280[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"total":5},"success":true}
+2023-03-31 09:32:34.685 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296818959934689280[0;39m ------------- 结束 耗时：7 ms -------------
+2023-03-31 09:32:58.031 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296819057880076288[0;39m ------------- 开始 -------------
+2023-03-31 09:32:58.031 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296819057880076288[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-31 09:32:58.031 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296819057880076288[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-31 09:32:58.031 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296819057880076288[0;39m 远程地址: 127.0.0.1
+2023-03-31 09:32:58.031 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296819057880076288[0;39m 请求参数: [{"page":1,"size":100}]
+2023-03-31 09:32:58.033 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296819057880076288[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-31 09:32:58.033 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296819057880076288[0;39m ==> Parameters: 
+2023-03-31 09:32:58.034 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296819057880076288[0;39m <==    Columns: count(0)
+2023-03-31 09:32:58.035 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296819057880076288[0;39m <==        Row: 5
+2023-03-31 09:32:58.035 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296819057880076288[0;39m <==      Total: 1
+2023-03-31 09:32:58.035 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296819057880076288[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-03-31 09:32:58.035 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296819057880076288[0;39m ==> Parameters: 100(Integer)
+2023-03-31 09:32:58.036 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819057880076288[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-03-31 09:32:58.036 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819057880076288[0;39m <==        Row: 1, 鬼吹灯, null, null, 恐怖类小说, /image/cover2.png, null, null, null
+2023-03-31 09:32:58.037 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819057880076288[0;39m <==        Row: 2, VUE入门教程, null, null, 零基础入门VUE开发, /image/cover1.png, null, null, null
+2023-03-31 09:32:58.037 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819057880076288[0;39m <==        Row: 3, JAVA深入理解, null, null, 更加深层次了解JAVA开发, null, null, null, null
+2023-03-31 09:32:58.037 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819057880076288[0;39m <==        Row: 4, 高效学习, null, null, 更加高效的学习提高成绩, null, null, null, null
+2023-03-31 09:32:58.037 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819057880076288[0;39m <==        Row: 5, 狂飙, null, null, 反黑除恶小说, null, null, null, null
+2023-03-31 09:32:58.037 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296819057880076288[0;39m <==      Total: 5
+2023-03-31 09:32:58.037 INFO  c.example.springbootdemothree.service.EbookService:39   [32m296819057880076288[0;39m 总行数：5
+2023-03-31 09:32:58.037 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296819057880076288[0;39m 总页数：1
+2023-03-31 09:32:58.038 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296819057880076288[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"total":5},"success":true}
+2023-03-31 09:32:58.038 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296819057880076288[0;39m ------------- 结束 耗时：8 ms -------------
+2023-03-31 09:33:05.314 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m296819088431386624[0;39m ------------- 开始 -------------
+2023-03-31 09:33:05.314 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m296819088431386624[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-03-31 09:33:05.314 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m296819088431386624[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-03-31 09:33:05.314 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m296819088431386624[0;39m 远程地址: 127.0.0.1
+2023-03-31 09:33:05.314 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m296819088431386624[0;39m 请求参数: [{"page":1,"size":1000}]
+2023-03-31 09:33:05.316 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296819088431386624[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-03-31 09:33:05.316 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296819088431386624[0;39m ==> Parameters: 
+2023-03-31 09:33:05.318 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296819088431386624[0;39m <==    Columns: count(0)
+2023-03-31 09:33:05.318 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m296819088431386624[0;39m <==        Row: 5
+2023-03-31 09:33:05.318 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m296819088431386624[0;39m <==      Total: 1
+2023-03-31 09:33:05.318 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296819088431386624[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-03-31 09:33:05.318 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296819088431386624[0;39m ==> Parameters: 1000(Integer)
+2023-03-31 09:33:05.319 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819088431386624[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-03-31 09:33:05.319 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819088431386624[0;39m <==        Row: 1, 鬼吹灯, null, null, 恐怖类小说, /image/cover2.png, null, null, null
+2023-03-31 09:33:05.319 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819088431386624[0;39m <==        Row: 2, VUE入门教程, null, null, 零基础入门VUE开发, /image/cover1.png, null, null, null
+2023-03-31 09:33:05.319 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819088431386624[0;39m <==        Row: 3, JAVA深入理解, null, null, 更加深层次了解JAVA开发, null, null, null, null
+2023-03-31 09:33:05.319 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819088431386624[0;39m <==        Row: 4, 高效学习, null, null, 更加高效的学习提高成绩, null, null, null, null
+2023-03-31 09:33:05.320 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m296819088431386624[0;39m <==        Row: 5, 狂飙, null, null, 反黑除恶小说, null, null, null, null
+2023-03-31 09:33:05.321 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m296819088431386624[0;39m <==      Total: 5
+2023-03-31 09:33:05.321 INFO  c.example.springbootdemothree.service.EbookService:39   [32m296819088431386624[0;39m 总行数：5
+2023-03-31 09:33:05.321 INFO  c.example.springbootdemothree.service.EbookService:40   [32m296819088431386624[0;39m 总页数：1
+2023-03-31 09:33:05.321 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m296819088431386624[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"恐怖类小说","id":1,"name":"鬼吹灯"},{"cover":"/image/cover1.png","description":"零基础入门VUE开发","id":2,"name":"VUE入门教程"},{"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"description":"反黑除恶小说","id":5,"name":"狂飙"}],"total":5},"success":true}
+2023-03-31 09:33:05.321 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m296819088431386624[0;39m ------------- 结束 耗时：7 ms -------------
