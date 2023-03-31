@@ -30,3 +30,31 @@ create table `ebook` (
 insert into `ebook`(`id`,`name`,`description`) values (1,'springboot','开发技术栈');
 
 select * from ebook;
+
+#分类表
+drop table if exists `category`;
+create table  `category`(
+    `id` bigint not null comment 'id',
+    `parent` bigint not null default 0 comment '父id',
+    `name` varchar(50) not null comment '名称',
+    `sort` int comment '顺序',
+    primary key (`id`)
+)engine=innodb default charset=utf8mb4 comment='分类';
+
+insert into `category` (`id`,`parent`,`name`,`sort`) values (100,000,'前段开发',100),
+                                                            (101,100,'VUE',101),
+                                                            (102,100,'HTML & CSS',102),
+                                                            (200,000,'JAVA',200),
+                                                            (201,200,'基础应用',201),
+                                                            (202,200,'框架应用',202),
+                                                            (300,000,'Python',300),
+                                                            (301,300,'基础应用',301),
+                                                            (302,300,'进阶方向应用',302),
+                                                            (400,000,'数据库',400),
+                                                            (401,400,'MYSQL',401),
+                                                            (500,000,'其他',500),
+                                                            (501,500,'服务器',501),
+                                                            (502,500,'开发者工具',502),
+                                                            (503,500,'其他',503);
+
+select  * from category;
