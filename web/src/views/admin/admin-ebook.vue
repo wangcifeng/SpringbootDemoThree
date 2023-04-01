@@ -4,16 +4,17 @@
 
       <p>
         <a-form layout="inline" :model="param">
-          <a-form-item >
-             
+          <a-form-item>
+
             <a-input v-model:value="param.name" placeholder="名称" size="large"></a-input>
           </a-form-item>
-          <a-form-item >
-             <a-button v-model:value="param.name" type="primary" @click="handleQuery({page:1,size:pagination.pageSize})" size="large">查询</a-button>
+          <a-form-item>
+            <a-button v-model:value="param.name" type="primary" @click="handleQuery({ page: 1, size: pagination.pageSize })"
+              size="large">查询</a-button>
 
           </a-form-item>
-          <a-form-item >
-             <a-button v-model:value="param.name" type="primary" @click="add(record)" size="large">新增</a-button>
+          <a-form-item>
+            <a-button v-model:value="param.name" type="primary" @click="add(record)" size="large">新增</a-button>
 
           </a-form-item>
 
@@ -24,6 +25,14 @@
         :loading="loading" @change="handleTableChange">
         <template #cover="{ text: cover }">
           <img v-if="cover" :src="cover" alt="avatar" style="width: 50px; height: 50px;" />
+        </template>
+
+        <!-- <template v-slots:category="{ text,record }">
+          <span>{{getCategoryName(record.category1Id)}} / {{getCategoryName(record.category2Id)}}</span>
+        </template> -->
+
+        <template v-slot:category="{ record }">
+          <span>{{ getCategoryName(record.category1Id) }} / {{ getCategoryName(record.category2Id) }}</span>
         </template>
 
         <template v-slot:action="{ record }">
@@ -49,11 +58,13 @@
       <a-form-item label="名称">
         <a-input v-model:value="ebook.name" />
       </a-form-item>
-      <a-form-item label="分类一">
-        <a-input v-model:value="ebook.category1Id" />
+      <a-form-item label="分类">
+        <!-- <a-input v-model:value="ebook.category1Id" />
       </a-form-item>
       <a-form-item label="分类二">
-        <a-input v-model:value="ebook.category2Id" />
+        <a-input v-model:value="ebook.category2Id" /> -->
+        <a-cascader v-model:value="categoryIds" :options="level1"
+          :field-names="{ label: 'name', value: 'id', children: 'children' }" />
       </a-form-item>
       <a-form-item label="文档数">
         <a-input v-model:value="ebook.docCount" />
@@ -73,7 +84,7 @@
 import { defineComponent, ref, onMounted } from 'vue';
 import axios from 'axios';
 import { message } from 'ant-design-vue';
-import {Tool} from '@/util/tool'
+import { Tool } from '@/util/tool'
 
 export default defineComponent({
   name: 'AdminEbook',
@@ -91,13 +102,17 @@ export default defineComponent({
         title: 'name',
         dataIndex: 'name',
       },
+      // {
+      //   title: '分类一',
+      //   dataIndex: 'category1Id',
+      // },
+      // {
+      //   title: '分类二',
+      //   dataIndex: 'category2Id',
+      // },
       {
         title: '分类一',
-        dataIndex: 'category1Id',
-      },
-      {
-        title: '分类二',
-        dataIndex: 'category2Id',
+        slots: { customRender: 'category' }
       },
       {
         title: '文档数',
@@ -126,6 +141,8 @@ export default defineComponent({
      */
     const handleQuery = (params) => {
       loading.value = true;
+      // 如果不清空现有数据，则编辑保存重新加载数据后，再点编辑，则列表显示的还是编辑前的数据
+      ebooks.value = [];
       axios.get("/ebook/list", {
         params: {
           page: params.page,
@@ -141,7 +158,7 @@ export default defineComponent({
           //重置分页
           pagination.value.current = params.page;
           pagination.value.total = data.content.total;
-        }else {
+        } else {
           message.error(data.message);
         }
       });
@@ -158,11 +175,14 @@ export default defineComponent({
     /**
      * 模态框--表单
      */
-    const ebook = ref({}); //每一条数据的点击按钮表单
+    const categoryIds = ref();
+    const ebook = ref(); //每一条数据的点击按钮表单
     const modalVisible = ref(false);
     const modalLoading = ref(false);
     const handleOk = () => {
       modalLoading.value = true;
+      ebook.value.category1Id = categoryIds.value[0];
+      ebook.value.category2Id = categoryIds.value[1];
       axios.post("/ebook/save", ebook.value).then((response) => {
         modalLoading.value = false;
         const data = response.data
@@ -174,7 +194,7 @@ export default defineComponent({
             page: pagination.value.current,
             size: pagination.value.pageSize
           });
-        }else {
+        } else {
           message.error(data.message);
         }
       });
@@ -186,6 +206,7 @@ export default defineComponent({
     const edit = (record) => {
       modalVisible.value = true;
       ebook.value = Tool.copy(record);
+      categoryIds.value = [ebook.value.category1Id, ebook.value.category2Id];
     };
 
     /**
@@ -212,7 +233,46 @@ export default defineComponent({
       });
     };
 
+    const level1 = ref();//一级分类树，children是二级分类树
+    let categorys;
+    const handleQueryCategory = () => {
+      loading.value = true;
+      axios.get("/category/all").then((response) => {
+        loading.value = false;
+        const data = response.data;
+        if (data.success) {
+          categorys = data.content;
+          console.log("原始数组：", categorys);
+
+          level1.value = [];
+          level1.value = Tool.array2Tree(categorys, 0);
+          console.log("树形结构：", level1.value);
+
+          // 加载完分类后，再加载电子书，否则如果分类树加载很慢，则电子书渲染会报错
+          handleQuery({
+            page: 1,
+            size: pagination.value.pageSize,
+          });
+        } else {
+          message.error(data.message);
+        }
+      });
+    };
+
+    const getCategoryName = (cid) => {
+      // console.log(cid)
+      let result = "";
+      categorys.forEach((item) => {
+        if (item.id === cid) {
+          // return item.name; // 注意，这里直接return不起作用
+          result = item.name;
+        }
+      });
+      return result;
+    };
+
     onMounted(() => {
+      handleQueryCategory();
       handleQuery({
         page: 1,
         size: pagination.value.pageSize
@@ -226,6 +286,8 @@ export default defineComponent({
       loading,
       ebook,
       param,
+      categoryIds,
+      level1,
 
       handleTableChange,
       edit,
@@ -233,6 +295,7 @@ export default defineComponent({
       add,
       deleteHandle,
       handleQuery,
+      getCategoryName,
 
       modalVisible,
       modalLoading
