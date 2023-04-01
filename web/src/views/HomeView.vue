@@ -2,43 +2,22 @@
   <div class="home">
     <a-layout>
       <a-layout-sider width="200" style="background: #fff">
-        <a-menu mode="inline" :style="{ height: '100%', borderRight: 0 }">
-          <a-sub-menu key="sub1">
-            <template #title>
-              <span>
-                <user-outlined />
-                subnav 11111
-              </span>
+        <a-menu mode="inline" :style="{ height: '100%', borderRight: 0 }" @click="handleClick()">
+          <a-menu-item key="welcome">
+            <router-link to="/">
+              <MailOutlined />
+              <span>欢迎</span>
+            </router-link>
+          </a-menu-item>
+          <a-sub-menu v-for="item in level1" :key="item.id">
+            <template v-slot:title>
+              <span><user-outlined />{{ item.name }}</span>
             </template>
-            <a-menu-item key="1">option1</a-menu-item>
-            <a-menu-item key="2">option2</a-menu-item>
-            <a-menu-item key="3">option3</a-menu-item>
-            <a-menu-item key="4">option4</a-menu-item>
+            <a-menu-item v-for="child in item.children" :key="child.id">
+              <MailOutlined /><span>{{ child.name }}</span>
+            </a-menu-item>
           </a-sub-menu>
-          <a-sub-menu key="sub2">
-            <template #title>
-              <span>
-                <laptop-outlined />
-                subnav 2
-              </span>
-            </template>
-            <a-menu-item key="5">option5</a-menu-item>
-            <a-menu-item key="6">option6</a-menu-item>
-            <a-menu-item key="7">option7</a-menu-item>
-            <a-menu-item key="8">option8</a-menu-item>
-          </a-sub-menu>
-          <a-sub-menu key="sub3">
-            <template #title>
-              <span>
-                <notification-outlined />
-                subnav 3
-              </span>
-            </template>
-            <a-menu-item key="9">option9</a-menu-item>
-            <a-menu-item key="10">option10</a-menu-item>
-            <a-menu-item key="11">option11</a-menu-item>
-            <a-menu-item key="12">option12</a-menu-item>
-          </a-sub-menu>
+
         </a-menu>
       </a-layout-sider>
       <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
@@ -70,10 +49,13 @@
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
 import axios from 'axios';
+import { message } from 'ant-design-vue';
+import { Tool } from '@/util/tool'
 
 export default defineComponent({
   name: 'HomeView',
   setup() {
+    const loading = ref(false);
     const pagination = {
       onChange: (page: number) => {
         console.log(page);
@@ -88,10 +70,35 @@ export default defineComponent({
     ];
 
 
-    const ebooks = ref();
+    const level1 = ref();//一级分类树，children是二级分类树
+    let categorys;
+    const handleQueryCategory = () => {
+      loading.value = true;
+      axios.get("/category/all").then((response) => {
+        loading.value = false;
+        const data = response.data;
+        if (data.success) {
+          categorys = data.content;
+          console.log("原始数组：", categorys);
 
+          level1.value = [];
+          level1.value = Tool.array2Tree(categorys, 0);
+          console.log("树形结构：", level1.value);
+        } else {
+          message.error(data.message);
+        }
+      });
+    };
+
+    const handleClick = () => {
+      console.log("menu click");
+    }
+
+
+    const ebooks = ref();
     onMounted(() => {
-      axios.get("/ebook/list",{
+      handleQueryCategory();
+      axios.get("/ebook/list", {
         params: {
           page: 1,
           size: 1000
@@ -105,7 +112,10 @@ export default defineComponent({
     return {
       ebooks,
       pagination,
-      actions
+      actions,
+      level1,
+
+      handleClick
     }
   }
 });
