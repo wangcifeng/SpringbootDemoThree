@@ -26,7 +26,7 @@
           <img v-if="cover" :src="cover" alt="avatar" style="width: 50px; height: 50px;" />
         </template>
 
-        <template v-slot:action="{ text, record }">
+        <template v-slot:action="{ record }">
           <a-space size="small">
             <a-button type="primary" @click="edit(record)">编辑</a-button>
 
@@ -40,7 +40,7 @@
     </a-layout-content>
   </a-layout>
 
-  <a-modal title="Title" v-model:visible="modalVisible" :confirm-loading="modalLoading" @ok="handleOk">
+  <a-modal title="电子书管理表单" v-model:visible="modalVisible" :confirm-loading="modalLoading" @ok="handleOk">
 
     <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="wrapperCol">
       <a-form-item label="封面">
