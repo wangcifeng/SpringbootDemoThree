@@ -11,7 +11,8 @@
           </a-form-item>
         </a-form>
       </p>
-      <a-table :columns="columns" :row-key="record => record.id" :data-source="categorys" :loading="loading" :pagination="false">
+      <a-table :columns="columns" :row-key="record => record.id" :data-source="level1" :loading="loading"
+        :pagination="false">
         <template #cover="{ text: cover }">
           <img v-if="cover" :src="cover" alt="avatar" style="width: 50px; height: 50px;" />
         </template>
@@ -35,7 +36,11 @@
         <a-input v-model:value="category.name" />
       </a-form-item>
       <a-form-item label="父分类">
-        <a-input v-model:value="category.parent" />
+        <a-select ref="select" v-model:value="category.parent">
+          <a-select-option value="0">无</a-select-option>
+          <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="category.id === c.id">{{c.name}}</a-select-option>
+        </a-select>
+
       </a-form-item>
       <a-form-item label="顺序">
         <a-input v-model:value="category.sort" />
@@ -85,6 +90,7 @@ export default defineComponent({
     /**
      * 数据查询查询
      */
+    const level1 = ref();//一级分类树，children是二级分类树
     const handleQuery = () => {
       loading.value = true;
       axios.get("/category/all").then((response) => {
@@ -93,6 +99,9 @@ export default defineComponent({
         console.log(response, '2222');
         if (data.success) {
           categorys.value = data.content;
+
+          level1.value = [];
+          level1.value = Tool.array2Tree(categorys.value, 0);
 
         } else {
           message.error(data.message);
@@ -161,6 +170,7 @@ export default defineComponent({
       loading,
       category,
       param,
+      level1,
 
       edit,
       handleOk,
