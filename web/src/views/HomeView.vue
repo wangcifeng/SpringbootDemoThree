@@ -5,8 +5,8 @@
         <a-menu mode="inline" :style="{ height: '100%', borderRight: 0 }" @click="handleClick">
           <a-menu-item key="welcome">
             <!-- <router-link to="/"> -->
-              <MailOutlined />
-              <span>欢迎</span>
+            <MailOutlined />
+            <span>欢迎</span>
             <!-- </router-link> -->
           </a-menu-item>
           <a-sub-menu v-for="item in level1" :key="item.id">
@@ -26,7 +26,8 @@
           <h1>小狗水上漂欢饮您</h1>
         </div>
 
-        <a-list item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks"  v-show="!isShowWelcome">
+        <a-list item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks"
+          v-show="!isShowWelcome">
           <template #renderItem="{ item }">
             <a-list-item key="item.name">
               <template #actions>
@@ -94,22 +95,19 @@ export default defineComponent({
       });
     };
 
-
-
     const isShowWelcome = ref(true);
     let categoryId2 = 0;
-    const handleClick = (value : any) => {
-      console.log("menu click" , value);
+    const handleClick = (value: any) => {
+      console.log("menu click", value);
       if (value.key === 'welcome') {
         isShowWelcome.value = true;
-      }else {
+      } else {
         categoryId2 = value.key;
         isShowWelcome.value = false;
         handleQueryEbook();
       }
     }
 
-    
     const handleQueryEbook = () => {
       axios.get("/ebook/list", {
         params: {
