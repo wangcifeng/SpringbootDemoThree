@@ -110,7 +110,6 @@ export default defineComponent({
       axios.get("/doc/all").then((response) => {
         loading.value = false;
         const data = response.data;
-        console.log(data,'555555555');
         if (data.success) {
           docs.value = data.content;
 
@@ -177,11 +176,46 @@ export default defineComponent({
       treeSelectData.value.unshift({ id: 0, name: '无' });
     };
 
+
+    /**
+    * 将某节点及其子孙节点全部置为disabled
+    */
+    const deleteIds = [];
+    const getDelectIds = (treeSelectData, id) => {
+      // console.log(treeSelectData, id);
+      // 遍历数组，即遍历某一层节点
+      for (let i = 0; i < treeSelectData.length; i++) {
+        const node = treeSelectData[i];
+        if (node.id === id) {
+          // 如果当前节点就是目标节点
+          // console.log("delete", node);
+          // 将目标节点设置为disabled
+          // node.disabled = true;
+          deleteIds.push(id)
+
+          // 遍历所有子节点，将所有子节点全部都加上disabled
+          const children = node.children;
+          if (Tool.isNotEmpty(children)) {
+            for (let j = 0; j < children.length; j++) {
+              getDelectIds(children, children[j].id)
+            }
+          }
+        } else {
+          // 如果当前节点不是目标节点，则到其子节点再找找看。
+          const children = node.children;
+          if (Tool.isNotEmpty(children)) {
+            getDelectIds(children, id);
+          }
+        }
+      }
+    };
+
     /**
     * 删除方法
     */
-    const deleteHandle = (id) => {
-      axios.delete("/doc/delete/" + id).then((response) => {
+    const deleteHandle = (ids) => {
+      getDelectIds(level1.value, ids);
+      axios.delete("/doc/delete/" + deleteIds.join(",")).then((response) => {
         const data = response.data
         if (data.success) {
           //重新加载列表
@@ -190,17 +224,17 @@ export default defineComponent({
       });
     };
 
+
     /**
-   * 将某节点及其子孙节点全部置为disabled
-   */
+     * 将某节点及其子孙节点全部置为disabled
+     */
     const setDisable = (treeSelectData, id) => {
-      // console.log(treeSelectData, id);
       // 遍历数组，即遍历某一层节点
       for (let i = 0; i < treeSelectData.length; i++) {
         const node = treeSelectData[i];
         if (node.id === id) {
           // 如果当前节点就是目标节点
-          console.log("disabled", node);
+          // console.log("disabled", node);
           // 将目标节点设置为disabled
           node.disabled = true;
 

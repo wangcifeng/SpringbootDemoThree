@@ -1,5 +1,6 @@
 package com.example.springbootdemothree.controller;
 
+import com.example.springbootdemothree.domain.DocExample;
 import com.example.springbootdemothree.req.DocQueryReq;
 import com.example.springbootdemothree.req.DocSaveReq;
 import com.example.springbootdemothree.resp.DocQueryResp;
@@ -10,6 +11,7 @@ import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -41,10 +43,18 @@ public class DocController {
         return  resp;
     }
 
-    @DeleteMapping ("/delete/{id}")
-    public CommonResp delete (@PathVariable Long id) {
+//    @DeleteMapping ("/delete/{id}")
+//    public CommonResp delete (@PathVariable Long id) {
+//        CommonResp resp = new CommonResp<>();
+//        docService.delete(id);
+//        return  resp;
+//    }
+
+    @DeleteMapping ("/delete/{idsStr}")
+    public CommonResp deletes (@PathVariable String idsStr) {
         CommonResp resp = new CommonResp<>();
-        docService.delete(id);
+        List<String> list = Arrays.asList(idsStr.split(","));
+        docService.delete(list);
         return  resp;
     }
 }
