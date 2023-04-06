@@ -9,8 +9,8 @@
             <a-input v-model:value="param.name" placeholder="名称" size="large"></a-input>
           </a-form-item>
           <a-form-item>
-            <a-button v-model:value="param.name" type="primary" @click="handleQuery({ page: 1, size: pagination.pageSize })"
-              size="large">查询</a-button>
+            <a-button v-model:value="param.name" type="primary"
+              @click="handleQuery({ page: 1, size: pagination.pageSize })" size="large">查询</a-button>
 
           </a-form-item>
           <a-form-item>
@@ -37,8 +37,8 @@
 
         <template v-slot:action="{ record }">
           <a-space size="small">
-            <router-link to="/admin/doc">
-            <a-button type="primary">文档管理</a-button>
+            <router-link :to="'/admin/doc?ebookId=' + record.id">
+              <a-button type="primary">文档管理</a-button>
             </router-link>
 
             <a-button type="primary" @click="edit(record)">编辑</a-button>

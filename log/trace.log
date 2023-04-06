@@ -1,189 +1,398 @@
-2023-04-05 19:52:16.948 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-04-05 19:52:16.967 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 10720 (D:\github\SpringbootDemoThree\target\classes started by 汪敬一 in D:\github\SpringbootDemoThree)
-2023-04-05 19:52:16.968 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-04-05 19:52:16.995 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-05 19:52:16.995 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-05 19:52:17.900 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
-2023-04-05 19:52:17.905 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
-2023-04-05 19:52:17.906 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-04-05 19:52:17.906 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
-2023-04-05 19:52:17.935 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-04-05 19:52:17.936 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 941 ms
-2023-04-05 19:52:18.610 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-04-05 19:52:18.614 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
-2023-04-05 19:52:18.642 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
-2023-04-05 19:52:18.652 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
-2023-04-05 19:52:18.659 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.97 seconds (process running for 2.379)
-2023-04-05 19:52:18.663 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
-2023-04-05 19:52:18.663 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
-2023-04-05 19:52:19.100 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-05 19:52:19.101 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-04-05 19:52:19.101 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2023-04-05 19:52:19.101 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
-2023-04-05 19:52:19.184 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@695f1155
-2023-04-05 19:52:19.185 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2023-04-05 19:55:33.614 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m298787677883469824[0;39m ------------- 开始 -------------
-2023-04-05 19:55:33.614 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m298787677883469824[0;39m 请求地址: http://127.0.0.1:8081/category/all GET
-2023-04-05 19:55:33.614 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m298787677883469824[0;39m 类名方法: com.example.springbootdemothree.controller.CategoryController - all
-2023-04-05 19:55:33.614 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m298787677883469824[0;39m 远程地址: 127.0.0.1
-2023-04-05 19:55:33.662 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m298787677883469824[0;39m 请求参数: []
-2023-04-05 19:55:33.740 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m298787677883469824[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
-2023-04-05 19:55:33.776 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m298787677883469824[0;39m ==> Parameters: 
-2023-04-05 19:55:33.807 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==    Columns: id, parent, name, sort
-2023-04-05 19:55:33.807 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 100, 0, 前段开发, 100
-2023-04-05 19:55:33.807 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 101, 100, VUE, 101
-2023-04-05 19:55:33.807 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 102, 100, HTML & CSS, 102
-2023-04-05 19:55:33.807 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 297256621363564544, 100, test, 105
-2023-04-05 19:55:33.807 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 200, 0, JAVA, 200
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 201, 200, 基础应用, 201
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 202, 200, 框架应用, 202
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 300, 0, Python, 300
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 301, 300, 基础应用, 301
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 302, 300, 进阶方向应用, 302
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 297200249724866560, 2222, 111, 333
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 400, 0, 数据库, 400
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 401, 400, MYSQL, 401
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 500, 0, 其他, 500
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 501, 500, 服务器, 501
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 502, 500, 开发者工具, 502
-2023-04-05 19:55:33.822 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787677883469824[0;39m <==        Row: 503, 500, 其他, 503
-2023-04-05 19:55:33.822 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m298787677883469824[0;39m <==      Total: 17
-2023-04-05 19:55:33.859 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m298787677883469824[0;39m 返回结果: {"content":[{"id":100,"name":"前段开发","parent":0,"sort":100},{"id":101,"name":"VUE","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":297256621363564544,"name":"test","parent":100,"sort":105},{"id":200,"name":"JAVA","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":297200249724866560,"name":"111","parent":2222,"sort":333},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MYSQL","parent":400,"sort":401},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发者工具","parent":500,"sort":502},{"id":503,"name":"其他","parent":500,"sort":503}],"success":true}
-2023-04-05 19:55:33.859 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m298787677883469824[0;39m ------------- 结束 耗时：245 ms -------------
-2023-04-05 19:55:35.034 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m298787683839381504[0;39m ------------- 开始 -------------
-2023-04-05 19:55:35.034 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m298787683839381504[0;39m 请求地址: http://127.0.0.1:8081/category/all GET
-2023-04-05 19:55:35.034 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m298787683839381504[0;39m 类名方法: com.example.springbootdemothree.controller.CategoryController - all
-2023-04-05 19:55:35.034 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m298787683839381504[0;39m 远程地址: 127.0.0.1
-2023-04-05 19:55:35.035 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m298787683839381504[0;39m 请求参数: []
-2023-04-05 19:55:35.035 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m298787683839381504[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
-2023-04-05 19:55:35.036 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m298787683839381504[0;39m ==> Parameters: 
-2023-04-05 19:55:35.038 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==    Columns: id, parent, name, sort
-2023-04-05 19:55:35.038 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 100, 0, 前段开发, 100
-2023-04-05 19:55:35.038 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 101, 100, VUE, 101
-2023-04-05 19:55:35.038 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 102, 100, HTML & CSS, 102
-2023-04-05 19:55:35.038 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 297256621363564544, 100, test, 105
-2023-04-05 19:55:35.038 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 200, 0, JAVA, 200
-2023-04-05 19:55:35.039 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 201, 200, 基础应用, 201
-2023-04-05 19:55:35.039 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 202, 200, 框架应用, 202
-2023-04-05 19:55:35.039 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 300, 0, Python, 300
-2023-04-05 19:55:35.040 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 301, 300, 基础应用, 301
-2023-04-05 19:55:35.040 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 302, 300, 进阶方向应用, 302
-2023-04-05 19:55:35.040 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 297200249724866560, 2222, 111, 333
-2023-04-05 19:55:35.041 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 400, 0, 数据库, 400
-2023-04-05 19:55:35.041 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 401, 400, MYSQL, 401
-2023-04-05 19:55:35.041 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 500, 0, 其他, 500
-2023-04-05 19:55:35.041 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 501, 500, 服务器, 501
-2023-04-05 19:55:35.042 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 502, 500, 开发者工具, 502
-2023-04-05 19:55:35.042 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m298787683839381504[0;39m <==        Row: 503, 500, 其他, 503
-2023-04-05 19:55:35.043 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m298787683839381504[0;39m <==      Total: 17
-2023-04-05 19:55:35.045 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m298787683839381504[0;39m 返回结果: {"content":[{"id":100,"name":"前段开发","parent":0,"sort":100},{"id":101,"name":"VUE","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":297256621363564544,"name":"test","parent":100,"sort":105},{"id":200,"name":"JAVA","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":297200249724866560,"name":"111","parent":2222,"sort":333},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MYSQL","parent":400,"sort":401},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发者工具","parent":500,"sort":502},{"id":503,"name":"其他","parent":500,"sort":503}],"success":true}
-2023-04-05 19:55:35.045 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m298787683839381504[0;39m ------------- 结束 耗时：11 ms -------------
-2023-04-05 19:55:35.145 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m298787684304949248[0;39m ------------- 开始 -------------
-2023-04-05 19:55:35.145 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m298787684304949248[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
-2023-04-05 19:55:35.148 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m298787684304949248[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
-2023-04-05 19:55:35.148 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m298787684304949248[0;39m 远程地址: 127.0.0.1
-2023-04-05 19:55:35.149 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m298787684304949248[0;39m 请求参数: [{"page":1,"size":10}]
-2023-04-05 19:55:35.203 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m298787684304949248[0;39m ==>  Preparing: SELECT count(0) FROM ebook
-2023-04-05 19:55:35.203 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m298787684304949248[0;39m ==> Parameters: 
-2023-04-05 19:55:35.209 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m298787684304949248[0;39m <==    Columns: count(0)
-2023-04-05 19:55:35.209 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m298787684304949248[0;39m <==        Row: 6
-2023-04-05 19:55:35.210 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m298787684304949248[0;39m <==      Total: 1
-2023-04-05 19:55:35.211 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m298787684304949248[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
-2023-04-05 19:55:35.211 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m298787684304949248[0;39m ==> Parameters: 10(Integer)
-2023-04-05 19:55:35.211 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m298787684304949248[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
-2023-04-05 19:55:35.215 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m298787684304949248[0;39m <==        Row: 2, VUE入门教程, 100, 101, 零基础入门VUE开发, /image/cover1.png, 3, 4, null
-2023-04-05 19:55:35.216 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m298787684304949248[0;39m <==        Row: 3, JAVA深入理解, 200, 201, 更加深层次了解JAVA开发, null, null, null, null
-2023-04-05 19:55:35.216 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m298787684304949248[0;39m <==        Row: 4, 高效学习, 500, 503, 更加高效的学习提高成绩, null, null, null, null
-2023-04-05 19:55:35.216 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m298787684304949248[0;39m <==        Row: 5, 狂飙, 300, 302, 反黑除恶小说, null, 2, 3, null
-2023-04-05 19:55:35.216 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m298787684304949248[0;39m <==        Row: 296884578826719232, 盗墓笔记, 500, 503, 一个恐怖类型的小说, /image/cover2.png, 3, 4, null
-2023-04-05 19:55:35.216 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m298787684304949248[0;39m <==        Row: 296884735114874880, 学习高手, 200, 202, 一个教育学习类的书籍, /image/cover1.png, 2, 2, null
-2023-04-05 19:55:35.216 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m298787684304949248[0;39m <==      Total: 6
-2023-04-05 19:55:35.219 INFO  c.example.springbootdemothree.service.EbookService:47   [32m298787684304949248[0;39m 总行数：6
-2023-04-05 19:55:35.220 INFO  c.example.springbootdemothree.service.EbookService:48   [32m298787684304949248[0;39m 总页数：1
-2023-04-05 19:55:35.228 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m298787684304949248[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门VUE开发","docCount":3,"id":2,"name":"VUE入门教程","viewCount":4},{"category1Id":200,"category2Id":201,"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"category1Id":500,"category2Id":503,"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"category1Id":300,"category2Id":302,"description":"反黑除恶小说","docCount":2,"id":5,"name":"狂飙","viewCount":3},{"category1Id":500,"category2Id":503,"cover":"/image/cover2.png","description":"一个恐怖类型的小说","docCount":3,"id":296884578826719232,"name":"盗墓笔记","viewCount":4},{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"一个教育学习类的书籍","docCount":2,"id":296884735114874880,"name":"学习高手","viewCount":2}],"total":6},"success":true}
-2023-04-05 19:55:35.228 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m298787684304949248[0;39m ------------- 结束 耗时：83 ms -------------
-2023-04-05 19:55:37.392 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m298787693729550336[0;39m ------------- 开始 -------------
-2023-04-05 19:55:37.392 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m298787693729550336[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
-2023-04-05 19:55:37.392 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m298787693729550336[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
-2023-04-05 19:55:37.392 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m298787693729550336[0;39m 远程地址: 127.0.0.1
-2023-04-05 19:55:37.392 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m298787693729550336[0;39m 请求参数: []
-2023-04-05 19:55:37.395 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298787693729550336[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
-2023-04-05 19:55:37.395 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298787693729550336[0;39m ==> Parameters: 
-2023-04-05 19:55:37.399 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298787693729550336[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
-2023-04-05 19:55:37.399 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298787693729550336[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
-2023-04-05 19:55:37.400 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298787693729550336[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
-2023-04-05 19:55:37.400 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298787693729550336[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
-2023-04-05 19:55:37.400 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298787693729550336[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
-2023-04-05 19:55:37.400 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298787693729550336[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
-2023-04-05 19:55:37.402 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298787693729550336[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
-2023-04-05 19:55:37.402 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298787693729550336[0;39m <==      Total: 6
-2023-04-05 19:55:37.411 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m298787693729550336[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
-2023-04-05 19:55:37.411 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m298787693729550336[0;39m ------------- 结束 耗时：19 ms -------------
-2023-04-05 20:32:03.250 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m298796861882503168[0;39m ------------- 开始 -------------
-2023-04-05 20:32:03.250 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m298796861882503168[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
-2023-04-05 20:32:03.250 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m298796861882503168[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
-2023-04-05 20:32:03.250 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m298796861882503168[0;39m 远程地址: 127.0.0.1
-2023-04-05 20:32:03.250 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m298796861882503168[0;39m 请求参数: []
-2023-04-05 20:32:03.250 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298796861882503168[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
-2023-04-05 20:32:03.250 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298796861882503168[0;39m ==> Parameters: 
-2023-04-05 20:32:03.250 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298796861882503168[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
-2023-04-05 20:32:03.250 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298796861882503168[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
-2023-04-05 20:32:03.266 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298796861882503168[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
-2023-04-05 20:32:03.266 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298796861882503168[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
-2023-04-05 20:32:03.266 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298796861882503168[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
-2023-04-05 20:32:03.266 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298796861882503168[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
-2023-04-05 20:32:03.266 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298796861882503168[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
-2023-04-05 20:32:03.266 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298796861882503168[0;39m <==      Total: 6
-2023-04-05 20:32:03.266 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m298796861882503168[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
-2023-04-05 20:32:03.266 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m298796861882503168[0;39m ------------- 结束 耗时：16 ms -------------
-2023-04-05 20:38:09.298 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m298798397199093760[0;39m ------------- 开始 -------------
-2023-04-05 20:38:09.299 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m298798397199093760[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
-2023-04-05 20:38:09.300 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m298798397199093760[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
-2023-04-05 20:38:09.301 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m298798397199093760[0;39m 远程地址: 127.0.0.1
-2023-04-05 20:38:09.301 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m298798397199093760[0;39m 请求参数: []
-2023-04-05 20:38:09.303 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298798397199093760[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
-2023-04-05 20:38:09.304 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298798397199093760[0;39m ==> Parameters: 
-2023-04-05 20:38:09.305 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798397199093760[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
-2023-04-05 20:38:09.305 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798397199093760[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
-2023-04-05 20:38:09.306 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798397199093760[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
-2023-04-05 20:38:09.307 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798397199093760[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
-2023-04-05 20:38:09.308 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798397199093760[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
-2023-04-05 20:38:09.308 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798397199093760[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
-2023-04-05 20:38:09.309 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798397199093760[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
-2023-04-05 20:38:09.309 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298798397199093760[0;39m <==      Total: 6
-2023-04-05 20:38:09.311 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m298798397199093760[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
-2023-04-05 20:38:09.313 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m298798397199093760[0;39m ------------- 结束 耗时：14 ms -------------
-2023-04-05 20:38:20.337 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m298798443500015616[0;39m ------------- 开始 -------------
-2023-04-05 20:38:20.337 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m298798443500015616[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
-2023-04-05 20:38:20.337 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m298798443500015616[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
-2023-04-05 20:38:20.337 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m298798443500015616[0;39m 远程地址: 127.0.0.1
-2023-04-05 20:38:20.337 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m298798443500015616[0;39m 请求参数: []
-2023-04-05 20:38:20.337 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298798443500015616[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
-2023-04-05 20:38:20.337 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298798443500015616[0;39m ==> Parameters: 
-2023-04-05 20:38:20.337 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798443500015616[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
-2023-04-05 20:38:20.337 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798443500015616[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
-2023-04-05 20:38:20.337 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798443500015616[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
-2023-04-05 20:38:20.337 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798443500015616[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
-2023-04-05 20:38:20.337 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798443500015616[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
-2023-04-05 20:38:20.337 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798443500015616[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
-2023-04-05 20:38:20.337 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798443500015616[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
-2023-04-05 20:38:20.337 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298798443500015616[0;39m <==      Total: 6
-2023-04-05 20:38:20.337 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m298798443500015616[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
-2023-04-05 20:38:20.337 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m298798443500015616[0;39m ------------- 结束 耗时：0 ms -------------
-2023-04-05 20:38:24.058 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m298798459107020800[0;39m ------------- 开始 -------------
-2023-04-05 20:38:24.058 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m298798459107020800[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
-2023-04-05 20:38:24.058 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m298798459107020800[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
-2023-04-05 20:38:24.058 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m298798459107020800[0;39m 远程地址: 127.0.0.1
-2023-04-05 20:38:24.058 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m298798459107020800[0;39m 请求参数: []
-2023-04-05 20:38:24.069 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298798459107020800[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
-2023-04-05 20:38:24.070 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298798459107020800[0;39m ==> Parameters: 
-2023-04-05 20:38:24.071 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798459107020800[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
-2023-04-05 20:38:24.071 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798459107020800[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
-2023-04-05 20:38:24.071 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798459107020800[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
-2023-04-05 20:38:24.072 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798459107020800[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
-2023-04-05 20:38:24.072 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798459107020800[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
-2023-04-05 20:38:24.072 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798459107020800[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
-2023-04-05 20:38:24.072 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m298798459107020800[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
-2023-04-05 20:38:24.073 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m298798459107020800[0;39m <==      Total: 6
-2023-04-05 20:38:24.073 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m298798459107020800[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
-2023-04-05 20:38:24.074 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m298798459107020800[0;39m ------------- 结束 耗时：16 ms -------------
+2023-04-06 14:06:44.865 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-04-06 14:06:44.878 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 10720 (D:\github\SpringbootDemoThree\target\classes started by 汪敬一 in D:\github\SpringbootDemoThree)
+2023-04-06 14:06:44.879 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-06 14:06:44.906 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-06 14:06:44.906 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-06 14:06:45.683 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-04-06 14:06:45.688 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-04-06 14:06:45.689 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-06 14:06:45.689 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-06 14:06:45.714 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-06 14:06:45.715 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 807 ms
+2023-04-06 14:06:46.354 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-06 14:06:46.359 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-06 14:06:46.389 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-04-06 14:06:46.400 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-06 14:06:46.409 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.788 seconds (process running for 2.124)
+2023-04-06 14:06:46.413 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-04-06 14:06:46.413 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-04-06 14:06:46.985 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-06 14:06:46.986 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-06 14:06:46.986 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-04-06 14:06:46.986 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-04-06 14:06:47.064 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10dc3338
+2023-04-06 14:06:47.069 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-04-06 14:06:55.537 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062328975036416[0;39m ------------- 开始 -------------
+2023-04-06 14:06:55.537 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062328975036416[0;39m 请求地址: http://127.0.0.1:8081/category/all GET
+2023-04-06 14:06:55.538 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062328975036416[0;39m 类名方法: com.example.springbootdemothree.controller.CategoryController - all
+2023-04-06 14:06:55.538 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062328975036416[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:06:55.556 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062328975036416[0;39m 请求参数: []
+2023-04-06 14:06:55.576 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062328975036416[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-04-06 14:06:55.588 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062328975036416[0;39m ==> Parameters: 
+2023-04-06 14:06:55.598 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==    Columns: id, parent, name, sort
+2023-04-06 14:06:55.598 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 100, 0, 前段开发, 100
+2023-04-06 14:06:55.600 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 101, 100, VUE, 101
+2023-04-06 14:06:55.600 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 102, 100, HTML & CSS, 102
+2023-04-06 14:06:55.600 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 297256621363564544, 100, test, 105
+2023-04-06 14:06:55.600 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 200, 0, JAVA, 200
+2023-04-06 14:06:55.600 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 201, 200, 基础应用, 201
+2023-04-06 14:06:55.600 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 202, 200, 框架应用, 202
+2023-04-06 14:06:55.601 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 300, 0, Python, 300
+2023-04-06 14:06:55.601 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 301, 300, 基础应用, 301
+2023-04-06 14:06:55.601 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2023-04-06 14:06:55.601 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 297200249724866560, 2222, 111, 333
+2023-04-06 14:06:55.601 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 400, 0, 数据库, 400
+2023-04-06 14:06:55.601 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 401, 400, MYSQL, 401
+2023-04-06 14:06:55.602 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 500, 0, 其他, 500
+2023-04-06 14:06:55.602 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 501, 500, 服务器, 501
+2023-04-06 14:06:55.603 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 502, 500, 开发者工具, 502
+2023-04-06 14:06:55.603 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062328975036416[0;39m <==        Row: 503, 500, 其他, 503
+2023-04-06 14:06:55.603 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062328975036416[0;39m <==      Total: 17
+2023-04-06 14:06:55.621 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062328975036416[0;39m 返回结果: {"content":[{"id":100,"name":"前段开发","parent":0,"sort":100},{"id":101,"name":"VUE","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":297256621363564544,"name":"test","parent":100,"sort":105},{"id":200,"name":"JAVA","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":297200249724866560,"name":"111","parent":2222,"sort":333},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MYSQL","parent":400,"sort":401},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发者工具","parent":500,"sort":502},{"id":503,"name":"其他","parent":500,"sort":503}],"success":true}
+2023-04-06 14:06:55.622 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062328975036416[0;39m ------------- 结束 耗时：85 ms -------------
+2023-04-06 14:06:57.586 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062337569165312[0;39m ------------- 开始 -------------
+2023-04-06 14:06:57.586 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062337569165312[0;39m 请求地址: http://127.0.0.1:8081/category/all GET
+2023-04-06 14:06:57.586 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062337569165312[0;39m 类名方法: com.example.springbootdemothree.controller.CategoryController - all
+2023-04-06 14:06:57.586 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062337569165312[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:06:57.586 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062337569165312[0;39m 请求参数: []
+2023-04-06 14:06:57.588 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062337569165312[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-04-06 14:06:57.588 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062337569165312[0;39m ==> Parameters: 
+2023-04-06 14:06:57.589 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==    Columns: id, parent, name, sort
+2023-04-06 14:06:57.589 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 100, 0, 前段开发, 100
+2023-04-06 14:06:57.590 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 101, 100, VUE, 101
+2023-04-06 14:06:57.590 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 102, 100, HTML & CSS, 102
+2023-04-06 14:06:57.590 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 297256621363564544, 100, test, 105
+2023-04-06 14:06:57.590 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 200, 0, JAVA, 200
+2023-04-06 14:06:57.591 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 201, 200, 基础应用, 201
+2023-04-06 14:06:57.591 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 202, 200, 框架应用, 202
+2023-04-06 14:06:57.591 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 300, 0, Python, 300
+2023-04-06 14:06:57.591 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 301, 300, 基础应用, 301
+2023-04-06 14:06:57.592 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2023-04-06 14:06:57.592 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 297200249724866560, 2222, 111, 333
+2023-04-06 14:06:57.592 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 400, 0, 数据库, 400
+2023-04-06 14:06:57.593 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 401, 400, MYSQL, 401
+2023-04-06 14:06:57.593 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 500, 0, 其他, 500
+2023-04-06 14:06:57.593 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 501, 500, 服务器, 501
+2023-04-06 14:06:57.593 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 502, 500, 开发者工具, 502
+2023-04-06 14:06:57.594 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062337569165312[0;39m <==        Row: 503, 500, 其他, 503
+2023-04-06 14:06:57.594 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062337569165312[0;39m <==      Total: 17
+2023-04-06 14:06:57.595 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062337569165312[0;39m 返回结果: {"content":[{"id":100,"name":"前段开发","parent":0,"sort":100},{"id":101,"name":"VUE","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":297256621363564544,"name":"test","parent":100,"sort":105},{"id":200,"name":"JAVA","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":297200249724866560,"name":"111","parent":2222,"sort":333},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MYSQL","parent":400,"sort":401},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发者工具","parent":500,"sort":502},{"id":503,"name":"其他","parent":500,"sort":503}],"success":true}
+2023-04-06 14:06:57.595 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062337569165312[0;39m ------------- 结束 耗时：9 ms -------------
+2023-04-06 14:06:57.642 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062337804046336[0;39m ------------- 开始 -------------
+2023-04-06 14:06:57.642 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062337804046336[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-04-06 14:06:57.642 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062337804046336[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-04-06 14:06:57.642 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062337804046336[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:06:57.644 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062337804046336[0;39m 请求参数: [{"page":1,"size":10}]
+2023-04-06 14:06:57.675 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062337804046336[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-04-06 14:06:57.676 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062337804046336[0;39m ==> Parameters: 
+2023-04-06 14:06:57.680 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m299062337804046336[0;39m <==    Columns: count(0)
+2023-04-06 14:06:57.680 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m299062337804046336[0;39m <==        Row: 6
+2023-04-06 14:06:57.681 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062337804046336[0;39m <==      Total: 1
+2023-04-06 14:06:57.682 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062337804046336[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-04-06 14:06:57.683 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062337804046336[0;39m ==> Parameters: 10(Integer)
+2023-04-06 14:06:57.684 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062337804046336[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-04-06 14:06:57.684 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062337804046336[0;39m <==        Row: 2, VUE入门教程, 100, 101, 零基础入门VUE开发, /image/cover1.png, 3, 4, null
+2023-04-06 14:06:57.685 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062337804046336[0;39m <==        Row: 3, JAVA深入理解, 200, 201, 更加深层次了解JAVA开发, null, null, null, null
+2023-04-06 14:06:57.685 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062337804046336[0;39m <==        Row: 4, 高效学习, 500, 503, 更加高效的学习提高成绩, null, null, null, null
+2023-04-06 14:06:57.685 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062337804046336[0;39m <==        Row: 5, 狂飙, 300, 302, 反黑除恶小说, null, 2, 3, null
+2023-04-06 14:06:57.685 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062337804046336[0;39m <==        Row: 296884578826719232, 盗墓笔记, 500, 503, 一个恐怖类型的小说, /image/cover2.png, 3, 4, null
+2023-04-06 14:06:57.686 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062337804046336[0;39m <==        Row: 296884735114874880, 学习高手, 200, 202, 一个教育学习类的书籍, /image/cover1.png, 2, 2, null
+2023-04-06 14:06:57.686 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062337804046336[0;39m <==      Total: 6
+2023-04-06 14:06:57.687 INFO  c.example.springbootdemothree.service.EbookService:47   [32m299062337804046336[0;39m 总行数：6
+2023-04-06 14:06:57.687 INFO  c.example.springbootdemothree.service.EbookService:48   [32m299062337804046336[0;39m 总页数：1
+2023-04-06 14:06:57.691 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062337804046336[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门VUE开发","docCount":3,"id":2,"name":"VUE入门教程","viewCount":4},{"category1Id":200,"category2Id":201,"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"category1Id":500,"category2Id":503,"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"category1Id":300,"category2Id":302,"description":"反黑除恶小说","docCount":2,"id":5,"name":"狂飙","viewCount":3},{"category1Id":500,"category2Id":503,"cover":"/image/cover2.png","description":"一个恐怖类型的小说","docCount":3,"id":296884578826719232,"name":"盗墓笔记","viewCount":4},{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"一个教育学习类的书籍","docCount":2,"id":296884735114874880,"name":"学习高手","viewCount":2}],"total":6},"success":true}
+2023-04-06 14:06:57.691 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062337804046336[0;39m ------------- 结束 耗时：49 ms -------------
+2023-04-06 14:06:58.944 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062343265030144[0;39m ------------- 开始 -------------
+2023-04-06 14:06:58.945 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062343265030144[0;39m 请求地址: http://127.0.0.1:8081/category/all GET
+2023-04-06 14:06:58.945 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062343265030144[0;39m 类名方法: com.example.springbootdemothree.controller.CategoryController - all
+2023-04-06 14:06:58.945 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062343265030144[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:06:58.945 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062343265030144[0;39m 请求参数: []
+2023-04-06 14:06:58.946 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062343265030144[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-04-06 14:06:58.946 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062343265030144[0;39m ==> Parameters: 
+2023-04-06 14:06:58.947 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==    Columns: id, parent, name, sort
+2023-04-06 14:06:58.947 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 100, 0, 前段开发, 100
+2023-04-06 14:06:58.948 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 101, 100, VUE, 101
+2023-04-06 14:06:58.948 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 102, 100, HTML & CSS, 102
+2023-04-06 14:06:58.948 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 297256621363564544, 100, test, 105
+2023-04-06 14:06:58.948 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 200, 0, JAVA, 200
+2023-04-06 14:06:58.949 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 201, 200, 基础应用, 201
+2023-04-06 14:06:58.949 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 202, 200, 框架应用, 202
+2023-04-06 14:06:58.949 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 300, 0, Python, 300
+2023-04-06 14:06:58.949 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 301, 300, 基础应用, 301
+2023-04-06 14:06:58.949 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2023-04-06 14:06:58.949 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 297200249724866560, 2222, 111, 333
+2023-04-06 14:06:58.950 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 400, 0, 数据库, 400
+2023-04-06 14:06:58.950 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 401, 400, MYSQL, 401
+2023-04-06 14:06:58.950 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 500, 0, 其他, 500
+2023-04-06 14:06:58.951 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 501, 500, 服务器, 501
+2023-04-06 14:06:58.951 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 502, 500, 开发者工具, 502
+2023-04-06 14:06:58.951 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062343265030144[0;39m <==        Row: 503, 500, 其他, 503
+2023-04-06 14:06:58.951 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062343265030144[0;39m <==      Total: 17
+2023-04-06 14:06:58.952 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062343265030144[0;39m 返回结果: {"content":[{"id":100,"name":"前段开发","parent":0,"sort":100},{"id":101,"name":"VUE","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":297256621363564544,"name":"test","parent":100,"sort":105},{"id":200,"name":"JAVA","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":297200249724866560,"name":"111","parent":2222,"sort":333},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MYSQL","parent":400,"sort":401},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发者工具","parent":500,"sort":502},{"id":503,"name":"其他","parent":500,"sort":503}],"success":true}
+2023-04-06 14:06:58.953 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062343265030144[0;39m ------------- 结束 耗时：9 ms -------------
+2023-04-06 14:06:59.583 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062345945190400[0;39m ------------- 开始 -------------
+2023-04-06 14:06:59.583 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062345945190400[0;39m 请求地址: http://127.0.0.1:8081/category/all GET
+2023-04-06 14:06:59.583 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062345945190400[0;39m 类名方法: com.example.springbootdemothree.controller.CategoryController - all
+2023-04-06 14:06:59.583 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062345945190400[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:06:59.583 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062345945190400[0;39m 请求参数: []
+2023-04-06 14:06:59.584 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062345945190400[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-04-06 14:06:59.585 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062345945190400[0;39m ==> Parameters: 
+2023-04-06 14:06:59.586 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==    Columns: id, parent, name, sort
+2023-04-06 14:06:59.586 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 100, 0, 前段开发, 100
+2023-04-06 14:06:59.586 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 101, 100, VUE, 101
+2023-04-06 14:06:59.586 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 102, 100, HTML & CSS, 102
+2023-04-06 14:06:59.586 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 297256621363564544, 100, test, 105
+2023-04-06 14:06:59.587 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 200, 0, JAVA, 200
+2023-04-06 14:06:59.587 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 201, 200, 基础应用, 201
+2023-04-06 14:06:59.587 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 202, 200, 框架应用, 202
+2023-04-06 14:06:59.587 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 300, 0, Python, 300
+2023-04-06 14:06:59.588 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 301, 300, 基础应用, 301
+2023-04-06 14:06:59.588 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2023-04-06 14:06:59.588 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 297200249724866560, 2222, 111, 333
+2023-04-06 14:06:59.588 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 400, 0, 数据库, 400
+2023-04-06 14:06:59.588 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 401, 400, MYSQL, 401
+2023-04-06 14:06:59.588 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 500, 0, 其他, 500
+2023-04-06 14:06:59.589 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 501, 500, 服务器, 501
+2023-04-06 14:06:59.589 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 502, 500, 开发者工具, 502
+2023-04-06 14:06:59.589 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062345945190400[0;39m <==        Row: 503, 500, 其他, 503
+2023-04-06 14:06:59.589 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062345945190400[0;39m <==      Total: 17
+2023-04-06 14:06:59.590 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062345945190400[0;39m 返回结果: {"content":[{"id":100,"name":"前段开发","parent":0,"sort":100},{"id":101,"name":"VUE","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":297256621363564544,"name":"test","parent":100,"sort":105},{"id":200,"name":"JAVA","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":297200249724866560,"name":"111","parent":2222,"sort":333},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MYSQL","parent":400,"sort":401},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发者工具","parent":500,"sort":502},{"id":503,"name":"其他","parent":500,"sort":503}],"success":true}
+2023-04-06 14:06:59.590 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062345945190400[0;39m ------------- 结束 耗时：7 ms -------------
+2023-04-06 14:06:59.605 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062346037465088[0;39m ------------- 开始 -------------
+2023-04-06 14:06:59.605 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062346037465088[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-04-06 14:06:59.605 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062346037465088[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-04-06 14:06:59.605 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062346037465088[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:06:59.605 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062346037465088[0;39m 请求参数: [{"page":1,"size":10}]
+2023-04-06 14:06:59.607 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062346037465088[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-04-06 14:06:59.608 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062346037465088[0;39m ==> Parameters: 
+2023-04-06 14:06:59.609 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m299062346037465088[0;39m <==    Columns: count(0)
+2023-04-06 14:06:59.609 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m299062346037465088[0;39m <==        Row: 6
+2023-04-06 14:06:59.610 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062346037465088[0;39m <==      Total: 1
+2023-04-06 14:06:59.610 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062346037465088[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-04-06 14:06:59.610 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062346037465088[0;39m ==> Parameters: 10(Integer)
+2023-04-06 14:06:59.611 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062346037465088[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-04-06 14:06:59.611 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062346037465088[0;39m <==        Row: 2, VUE入门教程, 100, 101, 零基础入门VUE开发, /image/cover1.png, 3, 4, null
+2023-04-06 14:06:59.612 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062346037465088[0;39m <==        Row: 3, JAVA深入理解, 200, 201, 更加深层次了解JAVA开发, null, null, null, null
+2023-04-06 14:06:59.612 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062346037465088[0;39m <==        Row: 4, 高效学习, 500, 503, 更加高效的学习提高成绩, null, null, null, null
+2023-04-06 14:06:59.612 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062346037465088[0;39m <==        Row: 5, 狂飙, 300, 302, 反黑除恶小说, null, 2, 3, null
+2023-04-06 14:06:59.612 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062346037465088[0;39m <==        Row: 296884578826719232, 盗墓笔记, 500, 503, 一个恐怖类型的小说, /image/cover2.png, 3, 4, null
+2023-04-06 14:06:59.612 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062346037465088[0;39m <==        Row: 296884735114874880, 学习高手, 200, 202, 一个教育学习类的书籍, /image/cover1.png, 2, 2, null
+2023-04-06 14:06:59.612 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062346037465088[0;39m <==      Total: 6
+2023-04-06 14:06:59.613 INFO  c.example.springbootdemothree.service.EbookService:47   [32m299062346037465088[0;39m 总行数：6
+2023-04-06 14:06:59.613 INFO  c.example.springbootdemothree.service.EbookService:48   [32m299062346037465088[0;39m 总页数：1
+2023-04-06 14:06:59.613 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062346037465088[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门VUE开发","docCount":3,"id":2,"name":"VUE入门教程","viewCount":4},{"category1Id":200,"category2Id":201,"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"category1Id":500,"category2Id":503,"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"category1Id":300,"category2Id":302,"description":"反黑除恶小说","docCount":2,"id":5,"name":"狂飙","viewCount":3},{"category1Id":500,"category2Id":503,"cover":"/image/cover2.png","description":"一个恐怖类型的小说","docCount":3,"id":296884578826719232,"name":"盗墓笔记","viewCount":4},{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"一个教育学习类的书籍","docCount":2,"id":296884735114874880,"name":"学习高手","viewCount":2}],"total":6},"success":true}
+2023-04-06 14:06:59.613 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062346037465088[0;39m ------------- 结束 耗时：8 ms -------------
+2023-04-06 14:07:02.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062360230989824[0;39m ------------- 开始 -------------
+2023-04-06 14:07:02.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062360230989824[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-06 14:07:02.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062360230989824[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-06 14:07:02.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062360230989824[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:02.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062360230989824[0;39m 请求参数: []
+2023-04-06 14:07:02.991 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062360230989824[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-06 14:07:02.991 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062360230989824[0;39m ==> Parameters: 
+2023-04-06 14:07:02.992 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062360230989824[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-06 14:07:02.992 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062360230989824[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-06 14:07:02.992 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062360230989824[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-06 14:07:02.993 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062360230989824[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-06 14:07:02.993 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062360230989824[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-06 14:07:02.994 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062360230989824[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-06 14:07:02.995 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062360230989824[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-06 14:07:02.995 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062360230989824[0;39m <==        Row: 298818913867796480, 2, 0, test, 3, null, null
+2023-04-06 14:07:02.995 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062360230989824[0;39m <==      Total: 7
+2023-04-06 14:07:03.003 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062360230989824[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":2,"id":298818913867796480,"name":"test","parent":0,"sort":3}],"success":true}
+2023-04-06 14:07:03.003 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062360230989824[0;39m ------------- 结束 耗时：14 ms -------------
+2023-04-06 14:07:08.331 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062382636961792[0;39m ------------- 开始 -------------
+2023-04-06 14:07:08.332 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062382636961792[0;39m 请求地址: http://127.0.0.1:8081/category/all GET
+2023-04-06 14:07:08.332 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062382636961792[0;39m 类名方法: com.example.springbootdemothree.controller.CategoryController - all
+2023-04-06 14:07:08.332 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062382636961792[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:08.332 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062382636961792[0;39m 请求参数: []
+2023-04-06 14:07:08.333 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062382636961792[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-04-06 14:07:08.333 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062382636961792[0;39m ==> Parameters: 
+2023-04-06 14:07:08.334 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==    Columns: id, parent, name, sort
+2023-04-06 14:07:08.334 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 100, 0, 前段开发, 100
+2023-04-06 14:07:08.334 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 101, 100, VUE, 101
+2023-04-06 14:07:08.334 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 102, 100, HTML & CSS, 102
+2023-04-06 14:07:08.335 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 297256621363564544, 100, test, 105
+2023-04-06 14:07:08.335 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 200, 0, JAVA, 200
+2023-04-06 14:07:08.335 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 201, 200, 基础应用, 201
+2023-04-06 14:07:08.335 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 202, 200, 框架应用, 202
+2023-04-06 14:07:08.335 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 300, 0, Python, 300
+2023-04-06 14:07:08.335 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 301, 300, 基础应用, 301
+2023-04-06 14:07:08.335 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2023-04-06 14:07:08.335 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 297200249724866560, 2222, 111, 333
+2023-04-06 14:07:08.336 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 400, 0, 数据库, 400
+2023-04-06 14:07:08.336 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 401, 400, MYSQL, 401
+2023-04-06 14:07:08.336 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 500, 0, 其他, 500
+2023-04-06 14:07:08.336 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 501, 500, 服务器, 501
+2023-04-06 14:07:08.336 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 502, 500, 开发者工具, 502
+2023-04-06 14:07:08.336 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062382636961792[0;39m <==        Row: 503, 500, 其他, 503
+2023-04-06 14:07:08.336 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062382636961792[0;39m <==      Total: 17
+2023-04-06 14:07:08.337 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062382636961792[0;39m 返回结果: {"content":[{"id":100,"name":"前段开发","parent":0,"sort":100},{"id":101,"name":"VUE","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":297256621363564544,"name":"test","parent":100,"sort":105},{"id":200,"name":"JAVA","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":297200249724866560,"name":"111","parent":2222,"sort":333},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MYSQL","parent":400,"sort":401},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发者工具","parent":500,"sort":502},{"id":503,"name":"其他","parent":500,"sort":503}],"success":true}
+2023-04-06 14:07:08.337 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062382636961792[0;39m ------------- 结束 耗时：6 ms -------------
+2023-04-06 14:07:08.345 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062382695682048[0;39m ------------- 开始 -------------
+2023-04-06 14:07:08.345 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062382695682048[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-04-06 14:07:08.345 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062382695682048[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-04-06 14:07:08.345 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062382695682048[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:08.345 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062382695682048[0;39m 请求参数: [{"page":1,"size":10}]
+2023-04-06 14:07:08.348 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062382695682048[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-04-06 14:07:08.349 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062382695682048[0;39m ==> Parameters: 
+2023-04-06 14:07:08.350 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m299062382695682048[0;39m <==    Columns: count(0)
+2023-04-06 14:07:08.350 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m299062382695682048[0;39m <==        Row: 6
+2023-04-06 14:07:08.351 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062382695682048[0;39m <==      Total: 1
+2023-04-06 14:07:08.351 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062382695682048[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-04-06 14:07:08.351 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062382695682048[0;39m ==> Parameters: 10(Integer)
+2023-04-06 14:07:08.352 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062382695682048[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-04-06 14:07:08.352 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062382695682048[0;39m <==        Row: 2, VUE入门教程, 100, 101, 零基础入门VUE开发, /image/cover1.png, 3, 4, null
+2023-04-06 14:07:08.352 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062382695682048[0;39m <==        Row: 3, JAVA深入理解, 200, 201, 更加深层次了解JAVA开发, null, null, null, null
+2023-04-06 14:07:08.353 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062382695682048[0;39m <==        Row: 4, 高效学习, 500, 503, 更加高效的学习提高成绩, null, null, null, null
+2023-04-06 14:07:08.353 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062382695682048[0;39m <==        Row: 5, 狂飙, 300, 302, 反黑除恶小说, null, 2, 3, null
+2023-04-06 14:07:08.353 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062382695682048[0;39m <==        Row: 296884578826719232, 盗墓笔记, 500, 503, 一个恐怖类型的小说, /image/cover2.png, 3, 4, null
+2023-04-06 14:07:08.354 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062382695682048[0;39m <==        Row: 296884735114874880, 学习高手, 200, 202, 一个教育学习类的书籍, /image/cover1.png, 2, 2, null
+2023-04-06 14:07:08.354 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062382695682048[0;39m <==      Total: 6
+2023-04-06 14:07:08.354 INFO  c.example.springbootdemothree.service.EbookService:47   [32m299062382695682048[0;39m 总行数：6
+2023-04-06 14:07:08.354 INFO  c.example.springbootdemothree.service.EbookService:48   [32m299062382695682048[0;39m 总页数：1
+2023-04-06 14:07:08.355 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062382695682048[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门VUE开发","docCount":3,"id":2,"name":"VUE入门教程","viewCount":4},{"category1Id":200,"category2Id":201,"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"category1Id":500,"category2Id":503,"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"category1Id":300,"category2Id":302,"description":"反黑除恶小说","docCount":2,"id":5,"name":"狂飙","viewCount":3},{"category1Id":500,"category2Id":503,"cover":"/image/cover2.png","description":"一个恐怖类型的小说","docCount":3,"id":296884578826719232,"name":"盗墓笔记","viewCount":4},{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"一个教育学习类的书籍","docCount":2,"id":296884735114874880,"name":"学习高手","viewCount":2}],"total":6},"success":true}
+2023-04-06 14:07:08.355 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062382695682048[0;39m ------------- 结束 耗时：10 ms -------------
+2023-04-06 14:07:10.118 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062390132183040[0;39m ------------- 开始 -------------
+2023-04-06 14:07:10.118 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062390132183040[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-06 14:07:10.119 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062390132183040[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-06 14:07:10.119 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062390132183040[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:10.119 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062390132183040[0;39m 请求参数: []
+2023-04-06 14:07:10.120 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062390132183040[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-06 14:07:10.120 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062390132183040[0;39m ==> Parameters: 
+2023-04-06 14:07:10.121 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062390132183040[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-06 14:07:10.121 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062390132183040[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-06 14:07:10.121 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062390132183040[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-06 14:07:10.122 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062390132183040[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-06 14:07:10.122 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062390132183040[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-06 14:07:10.123 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062390132183040[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-06 14:07:10.123 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062390132183040[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-06 14:07:10.123 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062390132183040[0;39m <==        Row: 298818913867796480, 2, 0, test, 3, null, null
+2023-04-06 14:07:10.123 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062390132183040[0;39m <==      Total: 7
+2023-04-06 14:07:10.124 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062390132183040[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":2,"id":298818913867796480,"name":"test","parent":0,"sort":3}],"success":true}
+2023-04-06 14:07:10.125 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062390132183040[0;39m ------------- 结束 耗时：7 ms -------------
+2023-04-06 14:07:15.781 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062413884526592[0;39m ------------- 开始 -------------
+2023-04-06 14:07:15.781 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062413884526592[0;39m 请求地址: http://127.0.0.1:8081/category/all GET
+2023-04-06 14:07:15.781 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062413884526592[0;39m 类名方法: com.example.springbootdemothree.controller.CategoryController - all
+2023-04-06 14:07:15.781 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062413884526592[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:15.781 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062413884526592[0;39m 请求参数: []
+2023-04-06 14:07:15.783 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062413884526592[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-04-06 14:07:15.783 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062413884526592[0;39m ==> Parameters: 
+2023-04-06 14:07:15.785 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==    Columns: id, parent, name, sort
+2023-04-06 14:07:15.785 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 100, 0, 前段开发, 100
+2023-04-06 14:07:15.785 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 101, 100, VUE, 101
+2023-04-06 14:07:15.786 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 102, 100, HTML & CSS, 102
+2023-04-06 14:07:15.786 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 297256621363564544, 100, test, 105
+2023-04-06 14:07:15.786 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 200, 0, JAVA, 200
+2023-04-06 14:07:15.786 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 201, 200, 基础应用, 201
+2023-04-06 14:07:15.786 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 202, 200, 框架应用, 202
+2023-04-06 14:07:15.786 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 300, 0, Python, 300
+2023-04-06 14:07:15.786 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 301, 300, 基础应用, 301
+2023-04-06 14:07:15.787 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2023-04-06 14:07:15.787 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 297200249724866560, 2222, 111, 333
+2023-04-06 14:07:15.787 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 400, 0, 数据库, 400
+2023-04-06 14:07:15.787 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 401, 400, MYSQL, 401
+2023-04-06 14:07:15.787 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 500, 0, 其他, 500
+2023-04-06 14:07:15.787 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 501, 500, 服务器, 501
+2023-04-06 14:07:15.788 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 502, 500, 开发者工具, 502
+2023-04-06 14:07:15.788 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062413884526592[0;39m <==        Row: 503, 500, 其他, 503
+2023-04-06 14:07:15.788 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062413884526592[0;39m <==      Total: 17
+2023-04-06 14:07:15.789 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062413884526592[0;39m 返回结果: {"content":[{"id":100,"name":"前段开发","parent":0,"sort":100},{"id":101,"name":"VUE","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":297256621363564544,"name":"test","parent":100,"sort":105},{"id":200,"name":"JAVA","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":297200249724866560,"name":"111","parent":2222,"sort":333},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MYSQL","parent":400,"sort":401},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发者工具","parent":500,"sort":502},{"id":503,"name":"其他","parent":500,"sort":503}],"success":true}
+2023-04-06 14:07:15.789 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062413884526592[0;39m ------------- 结束 耗时：8 ms -------------
+2023-04-06 14:07:17.546 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062421287473152[0;39m ------------- 开始 -------------
+2023-04-06 14:07:17.546 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062421287473152[0;39m 请求地址: http://127.0.0.1:8081/category/all GET
+2023-04-06 14:07:17.546 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062421287473152[0;39m 类名方法: com.example.springbootdemothree.controller.CategoryController - all
+2023-04-06 14:07:17.547 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062421287473152[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:17.547 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062421287473152[0;39m 请求参数: []
+2023-04-06 14:07:17.547 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062421287473152[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2023-04-06 14:07:17.548 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062421287473152[0;39m ==> Parameters: 
+2023-04-06 14:07:17.549 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==    Columns: id, parent, name, sort
+2023-04-06 14:07:17.549 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 100, 0, 前段开发, 100
+2023-04-06 14:07:17.549 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 101, 100, VUE, 101
+2023-04-06 14:07:17.549 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 102, 100, HTML & CSS, 102
+2023-04-06 14:07:17.550 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 297256621363564544, 100, test, 105
+2023-04-06 14:07:17.550 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 200, 0, JAVA, 200
+2023-04-06 14:07:17.550 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 201, 200, 基础应用, 201
+2023-04-06 14:07:17.550 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 202, 200, 框架应用, 202
+2023-04-06 14:07:17.550 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 300, 0, Python, 300
+2023-04-06 14:07:17.551 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 301, 300, 基础应用, 301
+2023-04-06 14:07:17.551 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2023-04-06 14:07:17.551 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 297200249724866560, 2222, 111, 333
+2023-04-06 14:07:17.551 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 400, 0, 数据库, 400
+2023-04-06 14:07:17.551 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 401, 400, MYSQL, 401
+2023-04-06 14:07:17.552 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 500, 0, 其他, 500
+2023-04-06 14:07:17.552 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 501, 500, 服务器, 501
+2023-04-06 14:07:17.552 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 502, 500, 开发者工具, 502
+2023-04-06 14:07:17.552 TRACE c.e.s.mapper.CategoryMapper.selectByExample       :143  [32m299062421287473152[0;39m <==        Row: 503, 500, 其他, 503
+2023-04-06 14:07:17.552 DEBUG c.e.s.mapper.CategoryMapper.selectByExample       :137  [32m299062421287473152[0;39m <==      Total: 17
+2023-04-06 14:07:17.553 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062421287473152[0;39m 返回结果: {"content":[{"id":100,"name":"前段开发","parent":0,"sort":100},{"id":101,"name":"VUE","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":297256621363564544,"name":"test","parent":100,"sort":105},{"id":200,"name":"JAVA","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":297200249724866560,"name":"111","parent":2222,"sort":333},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MYSQL","parent":400,"sort":401},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发者工具","parent":500,"sort":502},{"id":503,"name":"其他","parent":500,"sort":503}],"success":true}
+2023-04-06 14:07:17.553 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062421287473152[0;39m ------------- 结束 耗时：7 ms -------------
+2023-04-06 14:07:17.560 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062421346193408[0;39m ------------- 开始 -------------
+2023-04-06 14:07:17.560 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062421346193408[0;39m 请求地址: http://127.0.0.1:8081/ebook/list GET
+2023-04-06 14:07:17.560 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062421346193408[0;39m 类名方法: com.example.springbootdemothree.controller.EbookController - list
+2023-04-06 14:07:17.560 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062421346193408[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:17.560 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062421346193408[0;39m 请求参数: [{"page":1,"size":10}]
+2023-04-06 14:07:17.562 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062421346193408[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2023-04-06 14:07:17.562 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062421346193408[0;39m ==> Parameters: 
+2023-04-06 14:07:17.564 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m299062421346193408[0;39m <==    Columns: count(0)
+2023-04-06 14:07:17.564 TRACE c.e.s.mapper.EbookMapper.selectByExample_COUNT    :143  [32m299062421346193408[0;39m <==        Row: 6
+2023-04-06 14:07:17.564 DEBUG c.e.s.mapper.EbookMapper.selectByExample_COUNT    :137  [32m299062421346193408[0;39m <==      Total: 1
+2023-04-06 14:07:17.565 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062421346193408[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2023-04-06 14:07:17.565 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062421346193408[0;39m ==> Parameters: 10(Integer)
+2023-04-06 14:07:17.565 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062421346193408[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2023-04-06 14:07:17.566 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062421346193408[0;39m <==        Row: 2, VUE入门教程, 100, 101, 零基础入门VUE开发, /image/cover1.png, 3, 4, null
+2023-04-06 14:07:17.566 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062421346193408[0;39m <==        Row: 3, JAVA深入理解, 200, 201, 更加深层次了解JAVA开发, null, null, null, null
+2023-04-06 14:07:17.566 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062421346193408[0;39m <==        Row: 4, 高效学习, 500, 503, 更加高效的学习提高成绩, null, null, null, null
+2023-04-06 14:07:17.566 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062421346193408[0;39m <==        Row: 5, 狂飙, 300, 302, 反黑除恶小说, null, 2, 3, null
+2023-04-06 14:07:17.566 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062421346193408[0;39m <==        Row: 296884578826719232, 盗墓笔记, 500, 503, 一个恐怖类型的小说, /image/cover2.png, 3, 4, null
+2023-04-06 14:07:17.567 TRACE c.e.s.mapper.EbookMapper.selectByExample          :143  [32m299062421346193408[0;39m <==        Row: 296884735114874880, 学习高手, 200, 202, 一个教育学习类的书籍, /image/cover1.png, 2, 2, null
+2023-04-06 14:07:17.567 DEBUG c.e.s.mapper.EbookMapper.selectByExample          :137  [32m299062421346193408[0;39m <==      Total: 6
+2023-04-06 14:07:17.567 INFO  c.example.springbootdemothree.service.EbookService:47   [32m299062421346193408[0;39m 总行数：6
+2023-04-06 14:07:17.567 INFO  c.example.springbootdemothree.service.EbookService:48   [32m299062421346193408[0;39m 总页数：1
+2023-04-06 14:07:17.568 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062421346193408[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门VUE开发","docCount":3,"id":2,"name":"VUE入门教程","viewCount":4},{"category1Id":200,"category2Id":201,"description":"更加深层次了解JAVA开发","id":3,"name":"JAVA深入理解"},{"category1Id":500,"category2Id":503,"description":"更加高效的学习提高成绩","id":4,"name":"高效学习"},{"category1Id":300,"category2Id":302,"description":"反黑除恶小说","docCount":2,"id":5,"name":"狂飙","viewCount":3},{"category1Id":500,"category2Id":503,"cover":"/image/cover2.png","description":"一个恐怖类型的小说","docCount":3,"id":296884578826719232,"name":"盗墓笔记","viewCount":4},{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"一个教育学习类的书籍","docCount":2,"id":296884735114874880,"name":"学习高手","viewCount":2}],"total":6},"success":true}
+2023-04-06 14:07:17.568 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062421346193408[0;39m ------------- 结束 耗时：8 ms -------------
+2023-04-06 14:07:19.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062431534157824[0;39m ------------- 开始 -------------
+2023-04-06 14:07:19.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062431534157824[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-06 14:07:19.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062431534157824[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-06 14:07:19.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062431534157824[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:19.989 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062431534157824[0;39m 请求参数: []
+2023-04-06 14:07:19.990 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062431534157824[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-06 14:07:19.990 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062431534157824[0;39m ==> Parameters: 
+2023-04-06 14:07:19.991 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062431534157824[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-06 14:07:19.991 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062431534157824[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-06 14:07:19.991 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062431534157824[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-06 14:07:19.992 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062431534157824[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-06 14:07:19.992 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062431534157824[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-06 14:07:19.992 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062431534157824[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-06 14:07:19.992 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062431534157824[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-06 14:07:19.992 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062431534157824[0;39m <==        Row: 298818913867796480, 2, 0, test, 3, null, null
+2023-04-06 14:07:19.993 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062431534157824[0;39m <==      Total: 7
+2023-04-06 14:07:19.993 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062431534157824[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":2,"id":298818913867796480,"name":"test","parent":0,"sort":3}],"success":true}
+2023-04-06 14:07:19.993 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062431534157824[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-06 14:07:44.264 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062533350887424[0;39m ------------- 开始 -------------
+2023-04-06 14:07:44.264 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062533350887424[0;39m 请求地址: http://127.0.0.1:8081/doc/save POST
+2023-04-06 14:07:44.264 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062533350887424[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - save
+2023-04-06 14:07:44.264 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062533350887424[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:44.268 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062533350887424[0;39m 请求参数: [{"ebookId":2,"id":298818913867796480,"name":"test","parent":2,"sort":1}]
+2023-04-06 14:07:44.270 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299062533350887424[0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2023-04-06 14:07:44.272 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299062533350887424[0;39m ==> Parameters: 2(Long), 2(Long), test(String), 1(Integer), null, null, 298818913867796480(Long)
+2023-04-06 14:07:44.275 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299062533350887424[0;39m <==    Updates: 1
+2023-04-06 14:07:44.275 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062533350887424[0;39m 返回结果: {"success":true}
+2023-04-06 14:07:44.275 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062533350887424[0;39m ------------- 结束 耗时：11 ms -------------
+2023-04-06 14:07:44.295 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299062533480910848[0;39m ------------- 开始 -------------
+2023-04-06 14:07:44.296 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299062533480910848[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-06 14:07:44.296 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299062533480910848[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-06 14:07:44.296 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299062533480910848[0;39m 远程地址: 127.0.0.1
+2023-04-06 14:07:44.296 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299062533480910848[0;39m 请求参数: []
+2023-04-06 14:07:44.297 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062533480910848[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-06 14:07:44.297 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062533480910848[0;39m ==> Parameters: 
+2023-04-06 14:07:44.298 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062533480910848[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-06 14:07:44.298 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062533480910848[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-06 14:07:44.299 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062533480910848[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-06 14:07:44.299 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062533480910848[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-06 14:07:44.300 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062533480910848[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-06 14:07:44.300 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062533480910848[0;39m <==        Row: 298818913867796480, 2, 2, test, 1, null, null
+2023-04-06 14:07:44.300 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062533480910848[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-06 14:07:44.301 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299062533480910848[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-06 14:07:44.301 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299062533480910848[0;39m <==      Total: 7
+2023-04-06 14:07:44.302 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299062533480910848[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":2,"id":298818913867796480,"name":"test","parent":2,"sort":1},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-06 14:07:44.302 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299062533480910848[0;39m ------------- 结束 耗时：7 ms -------------
