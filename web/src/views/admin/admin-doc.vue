@@ -55,8 +55,8 @@
               <div style="border: 1px solid #ccc">
                 <Toolbar style="border-bottom: 1px solid #ccc" :editor="editorRef" :defaultConfig="toolbarConfig"
                   :mode="mode" />
-                <Editor style="height: 200px; overflow-y: hidden;" v-model="valueHtml"
-                  :defaultConfig="editorConfig" :mode="mode" @onCreated="handleCreated" />
+                <Editor style="height: 200px; overflow-y: hidden;" v-model="valueHtml" :defaultConfig="editorConfig"
+                  :mode="mode" @onCreated="handleCreated" />
               </div>
             </a-form-item>
           </a-form>
@@ -143,6 +143,7 @@ export default defineComponent({
       });
     }
 
+
     /**
      * 模态框--表单
      */
@@ -176,6 +177,7 @@ export default defineComponent({
     const edit = (record) => {
       modalVisible.value = true;
       doc.value = Tool.copy(record);
+      handleQueryContent();
 
       // 不能选择当前节点及其所有子孙节点，作为父节点，会使树断开
       treeSelectData.value = Tool.copy(level1.value);
@@ -184,6 +186,21 @@ export default defineComponent({
       // 为选择树添加一个"无"
       treeSelectData.value.unshift({ id: 0, name: '无' });
     };
+
+    /**
+    * 内容content查询
+    */
+    const handleQueryContent = () => {
+      axios.get("/doc/find-content/" + doc.value.id).then((response) => {
+        const data = response.data;
+        if (data.success) {
+          console.log(data);
+          valueHtml.value = data.content;
+        } else {
+          message.error(data.message);
+        }
+      });
+    }
 
     /**
      * 新增方法
