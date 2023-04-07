@@ -152,16 +152,12 @@ export default defineComponent({
     treeSelectData.value = [];
     const doc = ref(); //每一条数据的点击按钮表单
     doc.value = {};
-    const modalVisible = ref(false);
-    const modalLoading = ref(false);
     const handleOk = () => {
-      modalLoading.value = true;
       doc.value.content = valueHtml.value;
       axios.post("/doc/save", doc.value).then((response) => {
-        modalLoading.value = false;
         const data = response.data
         if (data.success) {
-          modalVisible.value = false;
+          message.success("保存成功");
 
           //重新加载列表
           handleQuery();
@@ -175,7 +171,8 @@ export default defineComponent({
     * 编辑按钮
     */
     const edit = (record) => {
-      modalVisible.value = true;
+      //清空富文本
+      valueHtml.value = "";
       doc.value = Tool.copy(record);
       handleQueryContent();
 
@@ -206,7 +203,8 @@ export default defineComponent({
      * 新增方法
      */
     const add = () => {
-      modalVisible.value = true;
+       //清空富文本
+       valueHtml.value = "";
       doc.value = {
         ebookId: route.query.ebookId
       };
@@ -325,10 +323,7 @@ export default defineComponent({
       deleteHandle,
       handleQuery,
 
-      modalVisible,
-      modalLoading,
       treeSelectData,
-
 
       editorRef,
       valueHtml,
