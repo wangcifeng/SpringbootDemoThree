@@ -15,9 +15,9 @@
             </a-form>
           </p>
           <a-table :columns="columns" :row-key="record => record.id" :data-source="level1" :loading="loading" size="small"
-            :pagination="false">
-            <template #name="{ text ,record }">
-              {{record.sort}} {{text}}
+            v-if="level1.length > 0" :defaultExpandAllRows="true" :pagination="false">
+            <template #name="{ text, record }">
+              {{ record.sort }} {{ text }}
             </template>
             <template v-slot:action="{ record }">
               <a-space size="small">
@@ -39,17 +39,17 @@
             </a-form>
           </p>
           <a-form :model="doc" :label-col="{ span: 3 }" layout="vertical">
-            <a-form-item >
+            <a-form-item>
               <a-input v-model:value="doc.name" />
             </a-form-item>
-            <a-form-item >
+            <a-form-item>
               <a-tree-select v-model:value="doc.parent" style="width: 100%"
                 :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }" :tree-data="treeSelectData"
                 placeholder="请选择父文档" :replaceFields="{ title: 'name', key: 'id', value: 'id' }" tree-default-expand-all>
               </a-tree-select>
             </a-form-item>
             <a-form-item>
-              <a-input v-model:value="doc.sort" placeholder="顺序"/>
+              <a-input v-model:value="doc.sort" placeholder="顺序" />
             </a-form-item>
             <a-form-item>
               <div style="border: 1px solid #ccc">
@@ -99,7 +99,7 @@ export default defineComponent({
       {
         title: '名称',
         dataIndex: 'name',
-        slots: {customRender: 'name'}
+        slots: { customRender: 'name' }
       },
       // {
       //   title: '父分类',
@@ -120,6 +120,7 @@ export default defineComponent({
     const docs = ref();
     const loading = ref(false);
     const level1 = ref();//一级分类树，children是二级分类树
+    level1.value = [];
     /**
      * 数据查询查询
      */
