@@ -2,11 +2,8 @@
   <a-layout>
     <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
 
-      <a-row>
+      <a-row :gutter="24">
         <a-col :span="8">
-
-
-
           <p>
             <a-form layout="inline" :model="param">
               <a-form-item>
@@ -17,45 +14,44 @@
               </a-form-item>
             </a-form>
           </p>
-          <a-table :columns="columns" :row-key="record => record.id" :data-source="level1" :loading="loading"
+          <a-table :columns="columns" :row-key="record => record.id" :data-source="level1" :loading="loading" size="small"
             :pagination="false">
-            <template #cover="{ text: cover }">
-              <img v-if="cover" :src="cover" alt="avatar" style="width: 50px; height: 50px;" />
+            <template #name="{ text ,record }">
+              {{record.sort}} {{text}}
             </template>
             <template v-slot:action="{ record }">
               <a-space size="small">
-                <a-button type="primary" @click="edit(record)">编辑</a-button>
+                <a-button type="primary" @click="edit(record)" size="small">编辑</a-button>
                 <a-popconfirm title="删除后不可恢复，确认删除吗?" ok-text="是" cancel-text="否" @confirm="deleteHandle(record.id)">
-                  <a-button type="danger">删除</a-button>
+                  <a-button type="danger" size="small">删除</a-button>
                 </a-popconfirm>
               </a-space>
             </template>
           </a-table>
-
-
-
-
-
-
         </a-col>
 
-
         <a-col :span="16">
-
-          <a-form :model="doc" :label-col="{ span: 3 }">
-            <a-form-item label="名称">
+          <p>
+            <a-form layout="inline" :model="param">
+              <a-form-item>
+                <a-button type="primary" @click="handleOk()" size="small">保存</a-button>
+              </a-form-item>
+            </a-form>
+          </p>
+          <a-form :model="doc" :label-col="{ span: 3 }" layout="vertical">
+            <a-form-item >
               <a-input v-model:value="doc.name" />
             </a-form-item>
-            <a-form-item label="父文档">
+            <a-form-item >
               <a-tree-select v-model:value="doc.parent" style="width: 100%"
                 :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }" :tree-data="treeSelectData"
                 placeholder="请选择父文档" :replaceFields="{ title: 'name', key: 'id', value: 'id' }" tree-default-expand-all>
               </a-tree-select>
             </a-form-item>
-            <a-form-item label="顺序">
-              <a-input v-model:value="doc.sort" />
+            <a-form-item>
+              <a-input v-model:value="doc.sort" placeholder="顺序"/>
             </a-form-item>
-            <a-form-item label="内容">
+            <a-form-item>
               <div style="border: 1px solid #ccc">
                 <Toolbar style="border-bottom: 1px solid #ccc" :editor="editorRef" :defaultConfig="toolbarConfig"
                   :mode="mode" />
@@ -64,7 +60,6 @@
               </div>
             </a-form-item>
           </a-form>
-
         </a-col>
       </a-row>
 
@@ -102,18 +97,19 @@ export default defineComponent({
     const editorConfig = { placeholder: '请输入内容...' }
     const columns = [
       {
-        title: 'name',
+        title: '名称',
         dataIndex: 'name',
+        slots: {customRender: 'name'}
       },
-      {
-        title: '父分类',
-        key: 'parent',
-        dataIndex: 'parent',
-      },
-      {
-        title: '顺序',
-        dataIndex: 'sort',
-      },
+      // {
+      //   title: '父分类',
+      //   key: 'parent',
+      //   dataIndex: 'parent',
+      // },
+      // {
+      //   title: '顺序',
+      //   dataIndex: 'sort',
+      // },
       {
         title: 'Action',
         key: 'action',
