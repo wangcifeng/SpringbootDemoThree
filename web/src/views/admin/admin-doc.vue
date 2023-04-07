@@ -55,7 +55,7 @@
               <div style="border: 1px solid #ccc">
                 <Toolbar style="border-bottom: 1px solid #ccc" :editor="editorRef" :defaultConfig="toolbarConfig"
                   :mode="mode" />
-                <Editor style="height: 200px; width: 100px; overflow-y: hidden;" v-model="valueHtml"
+                <Editor style="height: 200px; overflow-y: hidden;" v-model="valueHtml"
                   :defaultConfig="editorConfig" :mode="mode" @onCreated="handleCreated" />
               </div>
             </a-form-item>
@@ -149,11 +149,13 @@ export default defineComponent({
     // 因为树选择组件的属性状态，会随当前编辑的节点而变化，所以单独声明一个响应式变量
     const treeSelectData = ref();
     treeSelectData.value = [];
-    const doc = ref({}); //每一条数据的点击按钮表单
+    const doc = ref(); //每一条数据的点击按钮表单
+    doc.value = {};
     const modalVisible = ref(false);
     const modalLoading = ref(false);
     const handleOk = () => {
       modalLoading.value = true;
+      doc.value.content = valueHtml.value;
       axios.post("/doc/save", doc.value).then((response) => {
         modalLoading.value = false;
         const data = response.data

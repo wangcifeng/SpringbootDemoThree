@@ -1854,3 +1854,558 @@
 2023-04-07 11:14:22.659 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299381293714640896[0;39m <==      Total: 6
 2023-04-07 11:14:22.659 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299381293714640896[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
 2023-04-07 11:14:22.659 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299381293714640896[0;39m ------------- 结束 耗时：2 ms -------------
+2023-04-07 12:54:47.155 WARN  com.zaxxer.hikari.pool.HikariPool                 :804  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m43s666ms585µs800ns).
+2023-04-07 13:17:42.079 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299412329139933184[0;39m ------------- 开始 -------------
+2023-04-07 13:17:42.080 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299412329139933184[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:17:42.080 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299412329139933184[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:17:42.080 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299412329139933184[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:17:42.080 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299412329139933184[0;39m 请求参数: []
+2023-04-07 13:17:42.081 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299412329139933184[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:17:42.081 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299412329139933184[0;39m ==> Parameters: 
+2023-04-07 13:17:42.083 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299412329139933184[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:17:42.083 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299412329139933184[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:17:42.084 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299412329139933184[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:17:42.084 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299412329139933184[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:17:42.084 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299412329139933184[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:17:42.084 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299412329139933184[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:17:42.084 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299412329139933184[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:17:42.084 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299412329139933184[0;39m <==      Total: 6
+2023-04-07 13:17:42.085 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299412329139933184[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:17:42.086 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299412329139933184[0;39m ------------- 结束 耗时：7 ms -------------
+2023-04-07 13:30:18.329 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299415501082333184[0;39m ------------- 开始 -------------
+2023-04-07 13:30:18.330 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299415501082333184[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:30:18.330 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299415501082333184[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:30:18.330 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299415501082333184[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:30:18.330 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299415501082333184[0;39m 请求参数: []
+2023-04-07 13:30:18.331 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415501082333184[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:30:18.331 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415501082333184[0;39m ==> Parameters: 
+2023-04-07 13:30:18.332 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415501082333184[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:30:18.332 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415501082333184[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:30:18.332 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415501082333184[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:30:18.332 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415501082333184[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:30:18.332 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415501082333184[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:30:18.334 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415501082333184[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:30:18.334 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415501082333184[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:30:18.334 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415501082333184[0;39m <==      Total: 6
+2023-04-07 13:30:18.335 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299415501082333184[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:30:18.335 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299415501082333184[0;39m ------------- 结束 耗时：6 ms -------------
+2023-04-07 13:30:57.665 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299415666069475328[0;39m ------------- 开始 -------------
+2023-04-07 13:30:57.666 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299415666069475328[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:30:57.666 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299415666069475328[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:30:57.666 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299415666069475328[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:30:57.666 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299415666069475328[0;39m 请求参数: []
+2023-04-07 13:30:57.667 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415666069475328[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:30:57.667 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415666069475328[0;39m ==> Parameters: 
+2023-04-07 13:30:57.668 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415666069475328[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:30:57.668 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415666069475328[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:30:57.668 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415666069475328[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:30:57.668 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415666069475328[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:30:57.668 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415666069475328[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:30:57.668 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415666069475328[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:30:57.668 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415666069475328[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:30:57.668 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415666069475328[0;39m <==      Total: 6
+2023-04-07 13:30:57.669 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299415666069475328[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:30:57.669 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299415666069475328[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:31:12.052 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299415726412926976[0;39m ------------- 开始 -------------
+2023-04-07 13:31:12.052 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299415726412926976[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:31:12.052 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299415726412926976[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:31:12.052 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299415726412926976[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:31:12.053 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299415726412926976[0;39m 请求参数: []
+2023-04-07 13:31:12.053 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415726412926976[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:31:12.053 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415726412926976[0;39m ==> Parameters: 
+2023-04-07 13:31:12.054 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415726412926976[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:31:12.054 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415726412926976[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:31:12.054 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415726412926976[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:31:12.054 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415726412926976[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:31:12.055 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415726412926976[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:31:12.055 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415726412926976[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:31:12.055 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415726412926976[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:31:12.055 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415726412926976[0;39m <==      Total: 6
+2023-04-07 13:31:12.055 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299415726412926976[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:31:12.055 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299415726412926976[0;39m ------------- 结束 耗时：3 ms -------------
+2023-04-07 13:31:37.942 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299415835003457536[0;39m ------------- 开始 -------------
+2023-04-07 13:31:37.942 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299415835003457536[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:31:37.942 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299415835003457536[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:31:37.942 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299415835003457536[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:31:37.942 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299415835003457536[0;39m 请求参数: []
+2023-04-07 13:31:37.943 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415835003457536[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:31:37.943 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415835003457536[0;39m ==> Parameters: 
+2023-04-07 13:31:37.944 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415835003457536[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:31:37.944 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415835003457536[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:31:37.944 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415835003457536[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:31:37.944 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415835003457536[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:31:37.944 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415835003457536[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:31:37.944 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415835003457536[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:31:37.945 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415835003457536[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:31:37.945 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415835003457536[0;39m <==      Total: 6
+2023-04-07 13:31:37.945 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299415835003457536[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:31:37.945 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299415835003457536[0;39m ------------- 结束 耗时：3 ms -------------
+2023-04-07 13:31:53.437 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299415899994198016[0;39m ------------- 开始 -------------
+2023-04-07 13:31:53.437 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299415899994198016[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:31:53.437 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299415899994198016[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:31:53.437 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299415899994198016[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:31:53.437 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299415899994198016[0;39m 请求参数: []
+2023-04-07 13:31:53.438 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415899994198016[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:31:53.438 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415899994198016[0;39m ==> Parameters: 
+2023-04-07 13:31:53.439 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415899994198016[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:31:53.439 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415899994198016[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:31:53.440 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415899994198016[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:31:53.440 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415899994198016[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:31:53.440 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415899994198016[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:31:53.440 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415899994198016[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:31:53.440 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299415899994198016[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:31:53.441 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299415899994198016[0;39m <==      Total: 6
+2023-04-07 13:31:53.441 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299415899994198016[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:31:53.441 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299415899994198016[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:33:01.321 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299416184720330752[0;39m ------------- 开始 -------------
+2023-04-07 13:33:01.322 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299416184720330752[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:33:01.322 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299416184720330752[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:33:01.322 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299416184720330752[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:33:01.322 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299416184720330752[0;39m 请求参数: []
+2023-04-07 13:33:01.322 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416184720330752[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:33:01.323 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416184720330752[0;39m ==> Parameters: 
+2023-04-07 13:33:01.323 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416184720330752[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:33:01.324 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416184720330752[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:33:01.324 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416184720330752[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:33:01.324 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416184720330752[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:33:01.324 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416184720330752[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:33:01.324 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416184720330752[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:33:01.324 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416184720330752[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:33:01.324 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416184720330752[0;39m <==      Total: 6
+2023-04-07 13:33:01.325 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299416184720330752[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:33:01.325 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299416184720330752[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:33:16.470 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299416248259842048[0;39m ------------- 开始 -------------
+2023-04-07 13:33:16.471 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299416248259842048[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:33:16.471 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299416248259842048[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:33:16.471 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299416248259842048[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:33:16.471 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299416248259842048[0;39m 请求参数: []
+2023-04-07 13:33:16.471 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416248259842048[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:33:16.472 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416248259842048[0;39m ==> Parameters: 
+2023-04-07 13:33:16.472 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416248259842048[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:33:16.472 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416248259842048[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:33:16.473 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416248259842048[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:33:16.473 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416248259842048[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:33:16.473 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416248259842048[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:33:16.473 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416248259842048[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:33:16.473 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416248259842048[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:33:16.473 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416248259842048[0;39m <==      Total: 6
+2023-04-07 13:33:16.474 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299416248259842048[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:33:16.474 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299416248259842048[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:34:03.879 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299416447107600384[0;39m ------------- 开始 -------------
+2023-04-07 13:34:03.880 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299416447107600384[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:34:03.880 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299416447107600384[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:34:03.880 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299416447107600384[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:34:03.880 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299416447107600384[0;39m 请求参数: []
+2023-04-07 13:34:03.880 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416447107600384[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:34:03.881 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416447107600384[0;39m ==> Parameters: 
+2023-04-07 13:34:03.881 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416447107600384[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:34:03.881 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416447107600384[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:34:03.881 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416447107600384[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:34:03.882 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416447107600384[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:34:03.882 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416447107600384[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:34:03.882 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416447107600384[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:34:03.882 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416447107600384[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:34:03.882 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416447107600384[0;39m <==      Total: 6
+2023-04-07 13:34:03.883 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299416447107600384[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:34:03.883 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299416447107600384[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:35:26.464 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299416793494196224[0;39m ------------- 开始 -------------
+2023-04-07 13:35:26.464 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299416793494196224[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:35:26.464 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299416793494196224[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:35:26.464 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299416793494196224[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:35:26.464 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299416793494196224[0;39m 请求参数: []
+2023-04-07 13:35:26.464 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416793494196224[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:35:26.465 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416793494196224[0;39m ==> Parameters: 
+2023-04-07 13:35:26.465 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416793494196224[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:35:26.465 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416793494196224[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:35:26.466 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416793494196224[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:35:26.466 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416793494196224[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:35:26.466 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416793494196224[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:35:26.466 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416793494196224[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:35:26.466 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299416793494196224[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:35:26.466 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299416793494196224[0;39m <==      Total: 6
+2023-04-07 13:35:26.466 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299416793494196224[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:35:26.466 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299416793494196224[0;39m ------------- 结束 耗时：2 ms -------------
+2023-04-07 13:36:30.085 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299417060340011008[0;39m ------------- 开始 -------------
+2023-04-07 13:36:30.086 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299417060340011008[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:36:30.086 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299417060340011008[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:36:30.086 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299417060340011008[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:36:30.086 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299417060340011008[0;39m 请求参数: []
+2023-04-07 13:36:30.087 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299417060340011008[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:36:30.087 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299417060340011008[0;39m ==> Parameters: 
+2023-04-07 13:36:30.088 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299417060340011008[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:36:30.088 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299417060340011008[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:36:30.088 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299417060340011008[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:36:30.088 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299417060340011008[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:36:30.088 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299417060340011008[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:36:30.088 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299417060340011008[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:36:30.088 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299417060340011008[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:36:30.088 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299417060340011008[0;39m <==      Total: 6
+2023-04-07 13:36:30.089 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299417060340011008[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:36:30.089 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299417060340011008[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:42:42.292 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299418621489319936[0;39m ------------- 开始 -------------
+2023-04-07 13:42:42.292 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299418621489319936[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:42:42.292 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299418621489319936[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:42:42.292 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299418621489319936[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:42:42.292 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299418621489319936[0;39m 请求参数: []
+2023-04-07 13:42:42.293 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299418621489319936[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:42:42.293 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299418621489319936[0;39m ==> Parameters: 
+2023-04-07 13:42:42.294 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299418621489319936[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:42:42.294 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299418621489319936[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:42:42.295 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299418621489319936[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:42:42.295 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299418621489319936[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:42:42.295 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299418621489319936[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:42:42.295 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299418621489319936[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:42:42.295 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299418621489319936[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:42:42.295 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299418621489319936[0;39m <==      Total: 6
+2023-04-07 13:42:42.296 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299418621489319936[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:42:42.296 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299418621489319936[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:47:27.657 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299419818396880896[0;39m ------------- 开始 -------------
+2023-04-07 13:47:27.657 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299419818396880896[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:47:27.658 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299419818396880896[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:47:27.658 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299419818396880896[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:47:27.658 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299419818396880896[0;39m 请求参数: []
+2023-04-07 13:47:27.658 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299419818396880896[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:47:27.659 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299419818396880896[0;39m ==> Parameters: 
+2023-04-07 13:47:27.660 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419818396880896[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:47:27.660 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419818396880896[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:47:27.660 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419818396880896[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:47:27.660 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419818396880896[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:47:27.660 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419818396880896[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:47:27.660 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419818396880896[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:47:27.661 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419818396880896[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:47:27.661 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299419818396880896[0;39m <==      Total: 6
+2023-04-07 13:47:27.661 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299419818396880896[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:47:27.661 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299419818396880896[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:47:29.794 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299419827360108544[0;39m ------------- 开始 -------------
+2023-04-07 13:47:29.794 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299419827360108544[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:47:29.794 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299419827360108544[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:47:29.794 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299419827360108544[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:47:29.794 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299419827360108544[0;39m 请求参数: []
+2023-04-07 13:47:29.795 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299419827360108544[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:47:29.795 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299419827360108544[0;39m ==> Parameters: 
+2023-04-07 13:47:29.795 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419827360108544[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:47:29.795 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419827360108544[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:47:29.797 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419827360108544[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:47:29.797 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419827360108544[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:47:29.797 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419827360108544[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:47:29.797 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419827360108544[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:47:29.797 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419827360108544[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:47:29.797 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299419827360108544[0;39m <==      Total: 6
+2023-04-07 13:47:29.798 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299419827360108544[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:47:29.798 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299419827360108544[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:47:35.023 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299419849292124160[0;39m ------------- 开始 -------------
+2023-04-07 13:47:35.023 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299419849292124160[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:47:35.023 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299419849292124160[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:47:35.023 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299419849292124160[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:47:35.023 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299419849292124160[0;39m 请求参数: []
+2023-04-07 13:47:35.024 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299419849292124160[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:47:35.024 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299419849292124160[0;39m ==> Parameters: 
+2023-04-07 13:47:35.025 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419849292124160[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:47:35.025 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419849292124160[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:47:35.025 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419849292124160[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:47:35.026 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419849292124160[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:47:35.026 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419849292124160[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:47:35.026 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419849292124160[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:47:35.026 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299419849292124160[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:47:35.026 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299419849292124160[0;39m <==      Total: 6
+2023-04-07 13:47:35.027 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299419849292124160[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:47:35.027 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299419849292124160[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 13:48:24.202 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299420055563800576[0;39m ------------- 开始 -------------
+2023-04-07 13:48:24.202 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299420055563800576[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:48:24.202 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299420055563800576[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:48:24.202 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299420055563800576[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:48:24.202 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299420055563800576[0;39m 请求参数: []
+2023-04-07 13:48:24.203 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299420055563800576[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:48:24.203 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299420055563800576[0;39m ==> Parameters: 
+2023-04-07 13:48:24.204 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420055563800576[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:48:24.204 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420055563800576[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:48:24.204 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420055563800576[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:48:24.204 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420055563800576[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:48:24.204 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420055563800576[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:48:24.204 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420055563800576[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:48:24.204 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420055563800576[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:48:24.204 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299420055563800576[0;39m <==      Total: 6
+2023-04-07 13:48:24.205 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299420055563800576[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:48:24.205 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299420055563800576[0;39m ------------- 结束 耗时：3 ms -------------
+2023-04-07 13:48:27.845 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299420070843650048[0;39m ------------- 开始 -------------
+2023-04-07 13:48:27.845 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299420070843650048[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:48:27.846 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299420070843650048[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:48:27.846 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299420070843650048[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:48:27.846 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299420070843650048[0;39m 请求参数: []
+2023-04-07 13:48:27.846 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299420070843650048[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:48:27.846 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299420070843650048[0;39m ==> Parameters: 
+2023-04-07 13:48:27.847 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420070843650048[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:48:27.847 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420070843650048[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:48:27.847 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420070843650048[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:48:27.847 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420070843650048[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:48:27.847 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420070843650048[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:48:27.848 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420070843650048[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:48:27.848 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299420070843650048[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:48:27.848 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299420070843650048[0;39m <==      Total: 6
+2023-04-07 13:48:27.848 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299420070843650048[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:48:27.848 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299420070843650048[0;39m ------------- 结束 耗时：3 ms -------------
+2023-04-07 13:56:19.478 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299422049015828480[0;39m ------------- 开始 -------------
+2023-04-07 13:56:19.479 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299422049015828480[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 13:56:19.479 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299422049015828480[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 13:56:19.479 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299422049015828480[0;39m 远程地址: 127.0.0.1
+2023-04-07 13:56:19.479 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299422049015828480[0;39m 请求参数: []
+2023-04-07 13:56:19.480 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299422049015828480[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 13:56:19.480 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299422049015828480[0;39m ==> Parameters: 
+2023-04-07 13:56:19.481 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299422049015828480[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 13:56:19.481 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299422049015828480[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 13:56:19.481 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299422049015828480[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 13:56:19.481 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299422049015828480[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 13:56:19.481 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299422049015828480[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 13:56:19.481 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299422049015828480[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 13:56:19.482 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299422049015828480[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 13:56:19.482 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299422049015828480[0;39m <==      Total: 6
+2023-04-07 13:56:19.482 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299422049015828480[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 13:56:19.482 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299422049015828480[0;39m ------------- 结束 耗时：4 ms -------------
+2023-04-07 14:14:26.866 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-07 14:14:26.869 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-04-07 14:14:30.429 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-04-07 14:14:30.444 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 14552 (D:\github\SpringbootDemoThree\target\classes started by 汪敬一 in D:\github\SpringbootDemoThree)
+2023-04-07 14:14:30.445 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-07 14:14:30.469 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-07 14:14:30.470 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-07 14:14:31.197 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-04-07 14:14:31.201 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-04-07 14:14:31.201 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-07 14:14:31.202 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-07 14:14:31.227 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-07 14:14:31.228 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 757 ms
+2023-04-07 14:14:31.861 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-07 14:14:31.865 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-07 14:14:31.890 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-04-07 14:14:31.900 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-07 14:14:31.908 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 1.716 seconds (process running for 2.035)
+2023-04-07 14:14:31.911 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-04-07 14:14:31.911 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-04-07 14:14:32.056 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-07 14:14:32.057 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-07 14:14:32.057 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-04-07 14:14:32.057 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-04-07 14:14:32.133 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d80fb06
+2023-04-07 14:14:32.139 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-04-07 14:17:49.139 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299427458241925120[0;39m ------------- 开始 -------------
+2023-04-07 14:17:49.140 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299427458241925120[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 14:17:49.140 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299427458241925120[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 14:17:49.140 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299427458241925120[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:17:49.207 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299427458241925120[0;39m 请求参数: []
+2023-04-07 14:17:49.252 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427458241925120[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 14:17:49.272 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427458241925120[0;39m ==> Parameters: 
+2023-04-07 14:17:49.305 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427458241925120[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 14:17:49.305 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427458241925120[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 14:17:49.308 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427458241925120[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 14:17:49.309 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427458241925120[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 14:17:49.309 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427458241925120[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 14:17:49.310 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427458241925120[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 14:17:49.311 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427458241925120[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 14:17:49.311 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427458241925120[0;39m <==      Total: 6
+2023-04-07 14:17:49.359 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299427458241925120[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 14:17:49.360 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299427458241925120[0;39m ------------- 结束 耗时：223 ms -------------
+2023-04-07 14:18:22.935 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299427599996817408[0;39m ------------- 开始 -------------
+2023-04-07 14:18:22.935 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299427599996817408[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 14:18:22.936 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299427599996817408[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 14:18:22.936 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299427599996817408[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:18:22.936 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299427599996817408[0;39m 请求参数: []
+2023-04-07 14:18:22.938 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427599996817408[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 14:18:22.938 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427599996817408[0;39m ==> Parameters: 
+2023-04-07 14:18:22.940 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427599996817408[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 14:18:22.940 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427599996817408[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 14:18:22.941 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427599996817408[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 14:18:22.941 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427599996817408[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 14:18:22.942 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427599996817408[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 14:18:22.943 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427599996817408[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 14:18:22.943 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427599996817408[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 14:18:22.944 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427599996817408[0;39m <==      Total: 6
+2023-04-07 14:18:22.945 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299427599996817408[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 14:18:22.946 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299427599996817408[0;39m ------------- 结束 耗时：11 ms -------------
+2023-04-07 14:18:29.658 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299427628195123200[0;39m ------------- 开始 -------------
+2023-04-07 14:18:29.659 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299427628195123200[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 14:18:29.659 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299427628195123200[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 14:18:29.659 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299427628195123200[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:18:29.659 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299427628195123200[0;39m 请求参数: []
+2023-04-07 14:18:29.660 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427628195123200[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 14:18:29.661 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427628195123200[0;39m ==> Parameters: 
+2023-04-07 14:18:29.662 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427628195123200[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 14:18:29.662 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427628195123200[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 14:18:29.663 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427628195123200[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 14:18:29.663 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427628195123200[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 14:18:29.663 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427628195123200[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 14:18:29.664 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427628195123200[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 14:18:29.664 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427628195123200[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 14:18:29.665 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427628195123200[0;39m <==      Total: 6
+2023-04-07 14:18:29.666 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299427628195123200[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 14:18:29.666 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299427628195123200[0;39m ------------- 结束 耗时：8 ms -------------
+2023-04-07 14:18:39.619 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299427669974585344[0;39m ------------- 开始 -------------
+2023-04-07 14:18:39.619 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299427669974585344[0;39m 请求地址: http://127.0.0.1:8081/doc/save POST
+2023-04-07 14:18:39.620 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299427669974585344[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - save
+2023-04-07 14:18:39.620 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299427669974585344[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:18:39.622 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299427669974585344[0;39m 请求参数: [{"content":"<p>小狗水上漂嘎嘎嘻嘻啦啦啦啦</p>","ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0}]
+2023-04-07 14:18:39.623 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299427669974585344[0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2023-04-07 14:18:39.625 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299427669974585344[0;39m ==> Parameters: 1(Long), 0(Long), 文档1(String), 1(Integer), 0(Integer), 0(Integer), 1(Long)
+2023-04-07 14:18:39.627 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299427669974585344[0;39m <==    Updates: 1
+2023-04-07 14:18:39.628 DEBUG c.e.s.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m299427669974585344[0;39m ==>  Preparing: update content set content = ? where id = ?
+2023-04-07 14:18:39.628 DEBUG c.e.s.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m299427669974585344[0;39m ==> Parameters: <p>小狗水上漂嘎嘎嘻嘻啦啦啦啦</p>(String), 1(Long)
+2023-04-07 14:18:39.633 DEBUG c.e.s.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m299427669974585344[0;39m <==    Updates: 0
+2023-04-07 14:18:39.634 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299427669974585344[0;39m 返回结果: {"success":true}
+2023-04-07 14:18:39.634 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299427669974585344[0;39m ------------- 结束 耗时：15 ms -------------
+2023-04-07 14:18:39.641 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299427670066860032[0;39m ------------- 开始 -------------
+2023-04-07 14:18:39.641 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299427670066860032[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 14:18:39.641 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299427670066860032[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 14:18:39.641 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299427670066860032[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:18:39.641 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299427670066860032[0;39m 请求参数: []
+2023-04-07 14:18:39.641 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427670066860032[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 14:18:39.642 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427670066860032[0;39m ==> Parameters: 
+2023-04-07 14:18:39.642 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427670066860032[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 14:18:39.643 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427670066860032[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 14:18:39.643 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427670066860032[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 14:18:39.643 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427670066860032[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 14:18:39.643 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427670066860032[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 14:18:39.643 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427670066860032[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 14:18:39.644 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299427670066860032[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 14:18:39.644 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299427670066860032[0;39m <==      Total: 6
+2023-04-07 14:18:39.644 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299427670066860032[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 14:18:39.644 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299427670066860032[0;39m ------------- 结束 耗时：3 ms -------------
+2023-04-07 14:20:41.128 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299428179620270080[0;39m ------------- 开始 -------------
+2023-04-07 14:20:41.129 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299428179620270080[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 14:20:41.129 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299428179620270080[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 14:20:41.129 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299428179620270080[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:20:41.129 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299428179620270080[0;39m 请求参数: []
+2023-04-07 14:20:41.130 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299428179620270080[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 14:20:41.131 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299428179620270080[0;39m ==> Parameters: 
+2023-04-07 14:20:41.132 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428179620270080[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 14:20:41.133 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428179620270080[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 14:20:41.133 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428179620270080[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 14:20:41.133 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428179620270080[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 14:20:41.134 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428179620270080[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 14:20:41.134 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428179620270080[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 14:20:41.134 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428179620270080[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 14:20:41.135 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299428179620270080[0;39m <==      Total: 6
+2023-04-07 14:20:41.136 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299428179620270080[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 14:20:41.136 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299428179620270080[0;39m ------------- 结束 耗时：8 ms -------------
+2023-04-07 14:20:49.072 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299428212939821056[0;39m ------------- 开始 -------------
+2023-04-07 14:20:49.072 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299428212939821056[0;39m 请求地址: http://127.0.0.1:8081/doc/save POST
+2023-04-07 14:20:49.072 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299428212939821056[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - save
+2023-04-07 14:20:49.072 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299428212939821056[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:20:49.073 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299428212939821056[0;39m 请求参数: [{"content":"<p>小狗水上漂啊啊啊啊啊</p>","ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0}]
+2023-04-07 14:20:49.073 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299428212939821056[0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2023-04-07 14:20:49.074 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299428212939821056[0;39m ==> Parameters: 1(Long), 0(Long), 文档1(String), 1(Integer), 0(Integer), 0(Integer), 1(Long)
+2023-04-07 14:20:49.075 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299428212939821056[0;39m <==    Updates: 1
+2023-04-07 14:20:49.076 DEBUG c.e.s.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m299428212939821056[0;39m ==>  Preparing: update content set content = ? where id = ?
+2023-04-07 14:20:49.076 DEBUG c.e.s.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m299428212939821056[0;39m ==> Parameters: <p>小狗水上漂啊啊啊啊啊</p>(String), 1(Long)
+2023-04-07 14:20:49.077 DEBUG c.e.s.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m299428212939821056[0;39m <==    Updates: 0
+2023-04-07 14:20:49.077 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299428212939821056[0;39m 返回结果: {"success":true}
+2023-04-07 14:20:49.077 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299428212939821056[0;39m ------------- 结束 耗时：5 ms -------------
+2023-04-07 14:20:49.085 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299428212994347008[0;39m ------------- 开始 -------------
+2023-04-07 14:20:49.086 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299428212994347008[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 14:20:49.086 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299428212994347008[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 14:20:49.086 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299428212994347008[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:20:49.086 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299428212994347008[0;39m 请求参数: []
+2023-04-07 14:20:49.087 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299428212994347008[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 14:20:49.087 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299428212994347008[0;39m ==> Parameters: 
+2023-04-07 14:20:49.088 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428212994347008[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 14:20:49.089 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428212994347008[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 14:20:49.089 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428212994347008[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 14:20:49.090 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428212994347008[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 14:20:49.090 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428212994347008[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 14:20:49.090 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428212994347008[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 14:20:49.091 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428212994347008[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 14:20:49.091 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299428212994347008[0;39m <==      Total: 6
+2023-04-07 14:20:49.093 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299428212994347008[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 14:20:49.093 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299428212994347008[0;39m ------------- 结束 耗时：8 ms -------------
+2023-04-07 14:20:56.666 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299428244791365632[0;39m ------------- 开始 -------------
+2023-04-07 14:20:56.667 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299428244791365632[0;39m 请求地址: http://127.0.0.1:8081/doc/save POST
+2023-04-07 14:20:56.667 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299428244791365632[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - save
+2023-04-07 14:20:56.667 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299428244791365632[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:20:56.667 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299428244791365632[0;39m 请求参数: [{"content":"<p>小狗水上漂啊啊啊啊啊</p>","ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0}]
+2023-04-07 14:20:56.668 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299428244791365632[0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2023-04-07 14:20:56.669 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299428244791365632[0;39m ==> Parameters: 1(Long), 0(Long), 文档1(String), 1(Integer), 0(Integer), 0(Integer), 1(Long)
+2023-04-07 14:20:56.670 DEBUG c.e.s.mapper.DocMapper.updateByPrimaryKey         :137  [32m299428244791365632[0;39m <==    Updates: 1
+2023-04-07 14:20:56.671 DEBUG c.e.s.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m299428244791365632[0;39m ==>  Preparing: update content set content = ? where id = ?
+2023-04-07 14:20:56.671 DEBUG c.e.s.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m299428244791365632[0;39m ==> Parameters: <p>小狗水上漂啊啊啊啊啊</p>(String), 1(Long)
+2023-04-07 14:20:56.672 DEBUG c.e.s.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m299428244791365632[0;39m <==    Updates: 0
+2023-04-07 14:20:56.673 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299428244791365632[0;39m 返回结果: {"success":true}
+2023-04-07 14:20:56.673 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299428244791365632[0;39m ------------- 结束 耗时：7 ms -------------
+2023-04-07 14:20:56.680 INFO  com.example.springbootdemothree.aspect.LogAspect  :52   [32m299428244850085888[0;39m ------------- 开始 -------------
+2023-04-07 14:20:56.681 INFO  com.example.springbootdemothree.aspect.LogAspect  :53   [32m299428244850085888[0;39m 请求地址: http://127.0.0.1:8081/doc/all GET
+2023-04-07 14:20:56.681 INFO  com.example.springbootdemothree.aspect.LogAspect  :54   [32m299428244850085888[0;39m 类名方法: com.example.springbootdemothree.controller.DocController - all
+2023-04-07 14:20:56.681 INFO  com.example.springbootdemothree.aspect.LogAspect  :55   [32m299428244850085888[0;39m 远程地址: 127.0.0.1
+2023-04-07 14:20:56.681 INFO  com.example.springbootdemothree.aspect.LogAspect  :77   [32m299428244850085888[0;39m 请求参数: []
+2023-04-07 14:20:56.681 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299428244850085888[0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2023-04-07 14:20:56.682 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299428244850085888[0;39m ==> Parameters: 
+2023-04-07 14:20:56.683 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428244850085888[0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2023-04-07 14:20:56.683 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428244850085888[0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2023-04-07 14:20:56.684 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428244850085888[0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2023-04-07 14:20:56.685 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428244850085888[0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2023-04-07 14:20:56.685 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428244850085888[0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2023-04-07 14:20:56.686 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428244850085888[0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2023-04-07 14:20:56.687 TRACE c.e.s.mapper.DocMapper.selectByExample            :143  [32m299428244850085888[0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2023-04-07 14:20:56.687 DEBUG c.e.s.mapper.DocMapper.selectByExample            :137  [32m299428244850085888[0;39m <==      Total: 6
+2023-04-07 14:20:56.689 INFO  com.example.springbootdemothree.aspect.LogAspect  :89   [32m299428244850085888[0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}],"success":true}
+2023-04-07 14:20:56.689 INFO  com.example.springbootdemothree.aspect.LogAspect  :90   [32m299428244850085888[0;39m ------------- 结束 耗时：9 ms -------------
+2023-04-07 14:23:45.678 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-07 14:23:45.688 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-04-07 14:23:50.687 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-04-07 14:23:50.706 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 880 (D:\github\SpringbootDemoThree\target\classes started by 汪敬一 in D:\github\SpringbootDemoThree)
+2023-04-07 14:23:50.707 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-07 14:23:50.736 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-07 14:23:50.737 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-07 14:23:51.683 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-04-07 14:23:51.689 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-04-07 14:23:51.689 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-07 14:23:51.689 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-07 14:23:51.719 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-07 14:23:51.719 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 982 ms
+2023-04-07 14:23:51.915 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-04-07 14:23:51.932 INFO  c.e.s.config.SpringbootDemoThreeApplication       :51   [32m                  [0;39m Starting SpringbootDemoThreeApplication using Java 19.0.2 with PID 26276 (D:\github\SpringbootDemoThree\target\classes started by 汪敬一 in D:\github\SpringbootDemoThree)
+2023-04-07 14:23:51.933 INFO  c.e.s.config.SpringbootDemoThreeApplication       :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-04-07 14:23:51.958 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-07 14:23:51.959 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-07 14:23:52.509 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-04-07 14:23:52.514 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-07 14:23:52.545 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-04-07 14:23:52.556 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-07 14:23:52.565 INFO  c.e.s.config.SpringbootDemoThreeApplication       :57   [32m                  [0;39m Started SpringbootDemoThreeApplication in 2.142 seconds (process running for 2.97)
+2023-04-07 14:23:52.569 INFO  c.e.s.config.SpringbootDemoThreeApplication       :21   [32m                  [0;39m 启动成功！！
+2023-04-07 14:23:52.569 INFO  c.e.s.config.SpringbootDemoThreeApplication       :22   [32m                  [0;39m 地址: 	http://127.0.0.1:8081
+2023-04-07 14:23:52.720 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-04-07 14:23:52.725 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-04-07 14:23:52.725 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-04-07 14:23:52.726 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-07 14:23:52.750 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-07 14:23:52.750 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 791 ms
+2023-04-07 14:23:53.052 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-07 14:23:53.052 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-07 14:23:53.053 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-04-07 14:23:53.053 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-04-07 14:23:53.138 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24a03ac2
+2023-04-07 14:23:53.144 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-04-07 14:23:53.414 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-04-07 14:23:53.420 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m                  [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-07 14:23:53.448 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-04-07 14:23:53.450 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-04-07 14:23:53.453 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-04-07 14:23:53.454 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-04-07 14:23:53.457 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-04-07 14:23:53.457 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-04-07 14:23:53.464 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-07 14:23:53.473 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2023-04-07 14:23:59.701 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-07 14:23:59.706 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
