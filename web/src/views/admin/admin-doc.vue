@@ -25,25 +25,20 @@
           </a-space>
         </template>
       </a-table>
-
     </a-layout-content>
   </a-layout>
 
   <a-modal title="文档表单" v-model:visible="modalVisible" :confirm-loading="modalLoading" @ok="handleOk">
-
-    <a-form :model="doc" :label-col="{ span: 6 }">
+    <a-form :model="doc" :label-col="{ span: 3 }">
       <a-form-item label="名称">
         <a-input v-model:value="doc.name" />
       </a-form-item>
-
       <a-form-item label="父文档">
         <a-tree-select v-model:value="doc.parent" style="width: 100%"
           :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }" :tree-data="treeSelectData" placeholder="请选择父文档"
           :replaceFields="{ title: 'name', key: 'id', value: 'id' }" tree-default-expand-all>
         </a-tree-select>
       </a-form-item>
-
-
       <!-- <a-form-item label="父分类">
         <a-select ref="select" v-model:value="doc.parent">
           <a-select-option value="0">无</a-select-option>
@@ -51,28 +46,44 @@
           }}</a-select-option>
         </a-select>
       </a-form-item> -->
-
       <a-form-item label="顺序">
         <a-input v-model:value="doc.sort" />
       </a-form-item>
+      <a-form-item label="内容">
+        <div style="border: 1px solid #ccc">
+          <Toolbar style="border-bottom: 1px solid #ccc" :editor="editorRef" :defaultConfig="toolbarConfig"
+            :mode="mode" />
+          <Editor style="height: 200px; width: 100px; overflow-y: hidden;" v-model="valueHtml"
+            :defaultConfig="editorConfig" :mode="mode" @onCreated="handleCreated" />
+        </div>
+      </a-form-item>
     </a-form>
-
   </a-modal>
 </template>
 
 <script>
-import { defineComponent, ref, onMounted } from 'vue';
+import { defineComponent, ref, onMounted, shallowRef, onBeforeUnmount } from 'vue';
 import axios from 'axios';
 import { message } from 'ant-design-vue';
 import { Tool } from '@/util/tool'
 import { useRoute } from 'vue-router';
+import '@wangeditor/editor/dist/css/style.css' // 引入 css
+import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
 
 export default defineComponent({
   name: 'AdminDoc',
+  components: { Editor, Toolbar },
   setup() {
     const route = useRoute();
     const param = ref();
     param.value = {};
+
+    // 编辑器实例，必须用 shallowRef
+    const editorRef = shallowRef()
+    // 内容 HTML
+    const valueHtml = ref('<p>小狗水上漂</p>')
+    const toolbarConfig = {}
+    const editorConfig = { placeholder: '请输入内容...' }
     const columns = [
       {
         title: 'name',
@@ -95,11 +106,8 @@ export default defineComponent({
     ];
 
     const docs = ref();
-
     const loading = ref(false);
-
     const level1 = ref();//一级分类树，children是二级分类树
-
     /**
      * 数据查询查询
      */
@@ -255,6 +263,18 @@ export default defineComponent({
       }
     };
 
+
+    // 组件销毁时，也及时销毁编辑器
+    onBeforeUnmount(() => {
+      const editor = editorRef.value
+      if (editor == null) return
+      editor.destroy()
+    })
+
+    const handleCreated = (editor) => {
+      editorRef.value = editor // 记录 editor 实例，重要！
+    }
+
     onMounted(() => {
       handleQuery();
     });
@@ -275,9 +295,42 @@ export default defineComponent({
 
       modalVisible,
       modalLoading,
-      treeSelectData
+      treeSelectData,
+
+
+      editorRef,
+      valueHtml,
+      mode: 'simple', // 或 'simple'
+      toolbarConfig,
+      editorConfig,
+      handleCreated
     }
   },
 })
 </script>
 
+
+
+<style>
+/*工具栏样式*/
+.toolbar {
+  border: 1px solid #d9d9d9;
+  margin-bottom: 10px;
+}
+
+/*工具栏剧中显示*/
+.w-e-toolbar {
+  justify-content: center !important;
+}
+
+/*编辑器样式*/
+.editable {
+  border: 1px solid #d9d9d9;
+  min-height: 800px;
+  width: 850px;
+  margin: 30px auto 150px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 12%);
+  border: 1px solid #e8e8e8;
+}
+</style>
