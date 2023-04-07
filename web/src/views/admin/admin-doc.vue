@@ -89,12 +89,18 @@ export default defineComponent({
     const param = ref();
     param.value = {};
 
+
     // 编辑器实例，必须用 shallowRef
     const editorRef = shallowRef()
     // 内容 HTML
     const valueHtml = ref('<p>小狗水上漂</p>')
     const toolbarConfig = {}
     const editorConfig = { placeholder: '请输入内容...' }
+    const docs = ref();
+    // 因为树选择组件的属性状态，会随当前编辑的节点而变化，所以单独声明一个响应式变量
+    const treeSelectData = ref();
+    treeSelectData.value = [];
+
     const columns = [
       {
         title: '名称',
@@ -117,7 +123,7 @@ export default defineComponent({
       },
     ];
 
-    const docs = ref();
+
     const loading = ref(false);
     const level1 = ref();//一级分类树，children是二级分类树
     level1.value = [];
@@ -128,7 +134,7 @@ export default defineComponent({
       loading.value = true;
       //如果不清空现有数据，则编辑保存重新加载数据后，再点编辑，则列表显示的还是编辑前的数据
       level1.value = [];
-      axios.get("/doc/all").then((response) => {
+      axios.get("/doc/all/" + route.query.ebookId).then((response) => {
         loading.value = false;
         const data = response.data;
         if (data.success) {
@@ -136,6 +142,12 @@ export default defineComponent({
 
           level1.value = [];
           level1.value = Tool.array2Tree(docs.value, 0);
+
+          // 不能选择当前节点及其所有子孙节点，作为父节点，会使树断开
+          treeSelectData.value = Tool.copy(level1.value) || [];
+
+          // 为选择树添加一个"无"
+          treeSelectData.value.unshift({ id: 0, name: '无' });
 
         } else {
           message.error(data.message);
@@ -147,9 +159,6 @@ export default defineComponent({
     /**
      * 模态框--表单
      */
-    // 因为树选择组件的属性状态，会随当前编辑的节点而变化，所以单独声明一个响应式变量
-    const treeSelectData = ref();
-    treeSelectData.value = [];
     const doc = ref(); //每一条数据的点击按钮表单
     doc.value = {};
     const handleOk = () => {
@@ -203,8 +212,8 @@ export default defineComponent({
      * 新增方法
      */
     const add = () => {
-       //清空富文本
-       valueHtml.value = "";
+      //清空富文本
+      valueHtml.value = "";
       doc.value = {
         ebookId: route.query.ebookId
       };
